@@ -1,0 +1,57 @@
+/* Gaya fitur Cek Kata — melengkapi Bootstrap 5.3.8 */
+.ck-hero{position:relative;overflow:hidden;border-radius:1.75rem;padding:clamp(1.5rem,5vw,3rem);color:#fff;
+  background:radial-gradient(circle at 1px 1px,rgba(255,255,255,.12) 1.5px,transparent 0) 0 0/22px 22px,
+             linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 55%,#3b82f6 100%);box-shadow:0 16px 40px rgba(30,64,175,.25)}
+.ck-hero::before{content:"";position:absolute;width:240px;height:240px;right:-70px;top:-90px;border-radius:50%;background:#facc15;pointer-events:none}
+.ck-hero>*{position:relative;z-index:1}
+.ck-stiker{position:absolute!important;font-size:2rem;z-index:0!important;opacity:.9;animation:ckAyun 4s ease-in-out infinite}
+.ck-stiker.s1{right:2.2rem;top:1.4rem;transform:rotate(12deg)}
+.ck-stiker.s2{right:5.5rem;bottom:1.4rem;animation-delay:.8s}
+.ck-stiker.s3{right:1.6rem;bottom:3.8rem;animation-delay:1.6s}
+@keyframes ckAyun{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.ck-chip{display:inline-block;padding:.25rem .85rem;border-radius:999px;background:rgba(255,255,255,.18);font-size:.75rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.ck-judul{font-weight:800;font-size:clamp(2.2rem,7vw,3.4rem);margin:.7rem 0 .3rem;letter-spacing:-.02em}
+.ck-sub{max-width:30rem;opacity:.92;margin-bottom:1.5rem}
+
+.ck-cari{position:relative;display:flex;align-items:center;gap:.5rem;background:#fff;border-radius:999px;padding:.4rem .4rem .4rem 1.2rem;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.ck-cari input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-size:1.05rem;color:#1e293b}
+.ck-cari:focus-within{box-shadow:0 0 0 4px rgba(250,204,21,.65),0 10px 30px rgba(0,0,0,.2)}
+.ck-saran{position:absolute;left:0;right:0;top:calc(100% + .5rem);z-index:5;border-radius:1.1rem;overflow:hidden;box-shadow:0 14px 34px rgba(30,58,138,.28)}
+.ck-saran button{display:flex;justify-content:space-between;align-items:center;gap:.5rem;color:#1e293b}
+.ck-aksi{display:flex;align-items:center;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+.ck-stat{font-size:.85rem;opacity:.9}
+
+.ck-info{display:flex;gap:.9rem;align-items:flex-start;margin:1.25rem 0;padding:1rem 1.25rem;border-radius:1.25rem;background:#fffbeb;border:1px solid #fde68a;color:#78350f;font-size:.93rem}
+.ck-info-ikon{font-size:1.5rem;line-height:1}
+.ck-tab{gap:.5rem;margin-bottom:1rem}
+
+.ck-kartu{background:#fff;border-radius:1.5rem;padding:clamp(1.25rem,4vw,2rem);box-shadow:0 8px 24px rgba(30,64,175,.10);animation:ckMuncul .35s ease both;margin-bottom:1rem}
+.ck-kartu.kosong{text-align:center;color:#64748b}
+.ck-bulat{display:inline-grid;place-items:center;width:3.4rem;height:3.4rem;border-radius:50%;font-size:1.7rem;margin-bottom:.5rem;animation:ckPop .4s cubic-bezier(.3,1.6,.5,1) both}
+.ck-banding{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center;margin:1.25rem 0}
+.ck-kotak{border-radius:1.25rem;padding:1.1rem;text-align:center}
+.ck-kotak small{display:block;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.7rem;margin-bottom:.3rem}
+.ck-kata{font-size:clamp(1.5rem,4vw,2.3rem);font-weight:800;word-break:break-word;line-height:1.2}
+.ck-salah{background:#fef2f2;border:2px solid #fecaca;color:#b91c1c}
+.ck-salah .ck-kata{text-decoration:line-through;text-decoration-thickness:3px}
+.ck-benar{background:#f0fdf4;border:2px solid #bbf7d0;color:#15803d}
+.ck-panah{font-size:1.8rem;color:#1d4ed8}
+.ck-lain{background:#eff6ff;border-left:5px solid #facc15;border-radius:.9rem;padding:.7rem 1rem;margin-top:.5rem}
+
+.ck-abjad{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
+.ck-huruf{min-width:2.4rem;padding:.35rem .7rem;border:0;border-radius:.8rem;background:#fff;color:#1d4ed8;font-weight:700;box-shadow:0 2px 8px rgba(30,64,175,.1);transition:transform .15s}
+.ck-huruf:hover{transform:translateY(-2px)}
+.ck-huruf.aktif{background:#facc15;color:#1e3a8a}
+.ck-mini{display:block;width:100%;text-align:left;border:0;background:#fff;border-radius:1rem;padding:.8rem 1rem;border-left:5px solid #1d4ed8;box-shadow:0 4px 14px rgba(30,64,175,.08);transition:transform .15s,box-shadow .15s}
+.ck-mini:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(30,64,175,.16)}
+.ck-mini s{color:#dc2626;font-size:.9rem}
+.ck-mini strong{display:block;color:#15803d;font-size:1.1rem}
+
+@keyframes ckMuncul{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes ckPop{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+@media (max-width:575.98px){
+  .ck-banding{grid-template-columns:1fr}.ck-panah{transform:rotate(90deg);justify-self:center}
+  .ck-stiker{display:none}
+  .ck-cari{padding-left:.9rem}.ck-ikon{display:none}
+}
+@media (prefers-reduced-motion:reduce){.ck-kartu,.ck-bulat,.ck-stiker{animation:none}}

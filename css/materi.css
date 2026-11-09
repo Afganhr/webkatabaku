@@ -1,0 +1,112 @@
+/* css/materi.css : gaya halaman Materi Inti. Semua aturan dibatasi di dalam #materi agar tidak mengubah halaman lain. */
+#materi{--p:#4f7bf7;--v:#8b5cf6;--ink:#1e2147;--g1:#e6f0ff;--g2:#f0e9ff;--glass:rgba(255,255,255,.64);--bd:rgba(255,255,255,.85);--sh:0 12px 32px rgba(79,70,229,.12);--ok:#15803d;--no:#dc2626;--ok-bg:rgba(34,197,94,.14);--no-bg:rgba(239,68,68,.13);--bs-body-font-family:'Poppins',system-ui,sans-serif;--bs-body-color:var(--ink);--bs-body-bg:transparent}
+#materi[data-bs-theme=dark]{--ink:#e8eaff;--g1:#0d1130;--g2:#1b1244;--glass:rgba(30,35,76,.58);--bd:rgba(255,255,255,.1);--sh:0 12px 32px rgba(0,0,0,.4);--ok:#4ade80;--no:#f87171}
+#materi #bar{position:fixed;top:0;left:0;height:4px;width:0;z-index:2000;background:linear-gradient(90deg,var(--p),var(--v))}
+#materi .glass,#materi .glass-nav{background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--bd);box-shadow:var(--sh)}
+#materi .glass{border-radius:1.25rem}
+#materi .glass-nav{border-width:0 0 1px;z-index:1030}
+#materi .navbar-brand{background:linear-gradient(90deg,var(--p),var(--v));-webkit-background-clip:text;background-clip:text;color:transparent!important}
+#materi .cari{max-width:260px}
+#materi .cari .form-control,#materi .cari .input-group-text{background:var(--glass);border-color:var(--bd);color:var(--ink)}
+#materi .btn{transition:box-shadow .25s,filter .25s,background .25s}
+#materi .btn-icon{width:40px;height:40px;border-radius:50%;background:var(--glass);border:1px solid var(--bd);color:var(--ink);display:grid;place-items:center;padding:0}
+#materi .btn-icon:hover{box-shadow:0 0 0 4px rgba(139,92,246,.2)}
+#materi .i-sun{display:none}
+#materi[data-bs-theme=dark] .i-sun{display:block}
+#materi[data-bs-theme=dark] .i-moon{display:none}
+#materi .btn-grad{background:linear-gradient(90deg,var(--p),var(--v));color:#fff;border:0;border-radius:999px;padding:.7rem 1.6rem;box-shadow:0 8px 20px rgba(99,102,241,.35)}
+#materi .btn-grad:hover{color:#fff;filter:brightness(1.1);box-shadow:0 12px 26px rgba(99,102,241,.5)}
+#materi svg.lucide{width:1.1em;height:1.1em;vertical-align:-.15em}
+#materi .mt-hero{position:relative;padding:4.5rem 0 3rem;overflow:hidden}
+#materi .blob{position:absolute;border-radius:50%;filter:blur(50px);opacity:.5;animation:float 9s ease-in-out infinite}
+#materi .b1{width:320px;height:320px;background:#8ab4ff;top:-80px;right:8%}
+#materi .b2{width:260px;height:260px;background:#c4a8ff;bottom:-60px;left:4%;animation-delay:-4s}
+@keyframes float{50%{transform:translateY(-22px) scale(1.06)}}
+#materi .mt-hero h2{background:linear-gradient(90deg,var(--p),var(--v));-webkit-background-clip:text;background-clip:text;color:transparent}
+#materi .chip{display:inline-block;padding:.3rem .9rem;border-radius:999px;background:var(--glass);border:1px solid var(--bd);font-size:.8rem;font-weight:500}
+#materi .hero-art{max-width:380px;display:block;margin:auto;filter:drop-shadow(0 14px 24px rgba(79,70,229,.2))}
+#materi .b-ok{fill:#dcfce7;stroke:#16a34a;stroke-width:2}
+#materi .b-no{fill:#fee2e2;stroke:#dc2626;stroke-width:2}
+#materi .t-big{font:600 34px Poppins,sans-serif;fill:#1e2147}
+#materi .t-s{text-decoration:line-through}
+#materi .toc{position:sticky;top:5.5rem;padding:1.1rem;max-height:calc(100vh - 7rem);overflow:auto}
+#materi .prog{padding-bottom:.9rem;margin-bottom:.8rem;border-bottom:1px solid var(--bd)}
+#materi .prog .progress{height:8px;background:rgba(139,92,246,.15)}
+#materi .prog .progress-bar{background:linear-gradient(90deg,var(--p),var(--v));width:0}
+#materi #pn{font-size:1.5rem}
+#materi .toc-i{display:flex;align-items:center;gap:.6rem;padding:.5rem .7rem;border-radius:.8rem;color:var(--ink);text-decoration:none;font-size:.9rem;transition:background .25s,transform .25s}
+#materi .toc-i:hover{background:rgba(139,92,246,.12);transform:translateX(3px)}
+#materi .toc-i.on{background:linear-gradient(90deg,rgba(79,123,247,.2),rgba(139,92,246,.2));font-weight:600}
+#materi .dot{width:20px;height:20px;border-radius:50%;border:2px solid rgba(139,92,246,.4);display:grid;place-items:center;flex:none;color:transparent;font-size:.7rem}
+#materi .toc-i.done .dot{background:var(--ok);border-color:var(--ok);color:#fff}
+@media (max-width:991.98px){#materi .toc{position:static;max-height:none}}
+#materi .mt-bab{padding:clamp(1.2rem,3vw,2rem);margin-bottom:1.5rem}
+#materi .mh{margin-bottom:1.2rem}
+#materi .mh h2{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:700;margin:.4rem 0 0}
+#materi .no{display:inline-flex;gap:.4rem;align-items:center;font-size:.8rem;font-weight:600;color:var(--v);text-transform:uppercase;letter-spacing:.05em}
+#materi .lead-p{font-size:1.05rem;line-height:1.8}
+#materi .duo{display:flex;gap:1rem;flex-wrap:wrap}
+#materi .mini{flex:1 1 140px;border-radius:1rem;padding:.9rem 1.1rem;display:flex;flex-direction:column;gap:.1rem;font-size:1.2rem}
+#materi .mini small{font-size:.75rem;opacity:.8}
+#materi .mini.ok{background:var(--ok-bg);color:var(--ok)}
+#materi .mini.no{background:var(--no-bg);color:var(--no)}
+#materi .cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+#materi .ck{background:var(--glass);border:1px solid var(--bd);border-radius:1rem;padding:1.1rem;transition:transform .3s,box-shadow .3s}
+#materi .ck:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+#materi .ck .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--p),var(--v));margin-bottom:.7rem}
+#materi .ck h3{font-size:1rem;font-weight:600}
+#materi .ck p{margin:0;font-size:.92rem;line-height:1.7}
+#materi .sub{font-size:1.05rem;font-weight:600;margin:1.2rem 0 .7rem}
+#materi .cl{list-style:none;padding:0;margin:0;display:grid;gap:.7rem}
+#materi .cl li{display:flex;gap:.7rem;line-height:1.7;font-size:.95rem}
+#materi .cl svg{flex:none;color:var(--ok);margin-top:.3rem}
+#materi .callout{border-radius:1rem;padding:1rem 1.2rem;background:rgba(250,204,21,.16);border-left:5px solid #facc15;margin:1.2rem 0;line-height:1.7}
+#materi .callout.v{background:rgba(139,92,246,.12);border-color:var(--v)}
+#materi .accordion{--bs-accordion-bg:transparent;--bs-accordion-color:var(--ink);--bs-accordion-btn-color:var(--ink);--bs-accordion-btn-bg:transparent;--bs-accordion-active-bg:rgba(139,92,246,.12);--bs-accordion-active-color:var(--ink);--bs-accordion-border-color:var(--bd);--bs-accordion-border-radius:1rem;--bs-accordion-inner-border-radius:1rem;--bs-accordion-btn-focus-box-shadow:0 0 0 .2rem rgba(139,92,246,.25)}
+#materi .accordion-item{background:var(--glass);margin-bottom:.6rem;border-radius:1rem!important;overflow:hidden}
+#materi .accordion-button{font-weight:600;font-size:.97rem;gap:.5rem;box-shadow:none!important}
+#materi .accordion-body{line-height:1.75;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(-6px)}}
+#materi .table{--bs-table-bg:transparent;--bs-table-color:var(--ink);--bs-table-border-color:var(--bd)}
+#materi .table th{font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+#materi td.ok{color:var(--ok);font-weight:600}
+#materi td.no{color:var(--no);text-decoration:line-through}
+#materi .letters{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+#materi .letter{background:#fff;color:#1e2147;border-radius:.8rem;padding:1.1rem;font-size:.9rem;white-space:pre-line;line-height:1.65;box-shadow:var(--sh)}
+#materi .letter h4{font-size:.8rem;text-transform:uppercase;color:var(--v);margin-bottom:.5rem}
+#materi mark.tb{background:none;color:inherit;transition:background .4s,color .4s}
+#materi .answered mark.tb{background:var(--no-bg);color:#b91c1c;text-decoration:line-through}
+#materi .kuis{margin-top:1rem}
+#materi .kuis .q{font-weight:600}
+#materi .pilih{border-radius:999px;border:1px solid var(--bd);background:var(--glass);color:var(--ink);padding:.5rem 1.3rem}
+#materi .pilih:hover{border-color:var(--v);box-shadow:0 0 0 4px rgba(139,92,246,.18)}
+#materi .fb{margin-top:.8rem;border-radius:.8rem;padding:.7rem 1rem;display:none;animation:fade .4s ease}
+#materi .fb.ok{display:block;background:var(--ok-bg);color:var(--ok)}
+#materi .fb.no{display:block;background:var(--no-bg);color:var(--no)}
+#materi .rk{text-align:left;width:100%;background:var(--glass);border:1px solid var(--bd);border-radius:1rem;padding:1.1rem;color:var(--ink);transition:transform .3s,box-shadow .3s}
+#materi .rk:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+#materi .rk b{display:flex;gap:.5rem;align-items:center}
+#materi .rk .bk{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease,opacity .4s;opacity:0}
+#materi .rk .bk>div{overflow:hidden}
+#materi .rk.open .bk{grid-template-rows:1fr;opacity:1;margin-top:.7rem}
+#materi .rk small{opacity:.65}
+#materi .rk.open small{display:none}
+#materi .rk p{margin:0;font-size:.92rem;line-height:1.7}
+#materi .pus{padding-left:1.3rem;display:grid;gap:.9rem;line-height:1.7;font-size:.93rem}
+#materi .pus li{padding-left:.3rem}
+#materi .pus a{word-break:break-all;color:var(--v)}
+#materi footer.card-f{margin-top:1rem}
+#materi .btn-selesai{margin-top:1.3rem;border-radius:999px;border:1px solid var(--v);color:var(--v);background:transparent;padding:.45rem 1.2rem;font-weight:500}
+#materi .btn-selesai:hover{background:rgba(139,92,246,.12)}
+#materi .btn-selesai.on{background:var(--ok);border-color:var(--ok);color:#fff}
+#materi .empty{padding:3rem 1.5rem;text-align:center}
+#materi .empty svg{width:2.5rem;height:2.5rem;color:var(--v);margin-bottom:.5rem}
+#materi #atas{position:fixed;right:1.2rem;bottom:1.2rem;width:48px;height:48px;padding:0;display:grid;place-items:center;border-radius:50%;opacity:0;pointer-events:none;transition:opacity .3s,box-shadow .25s;z-index:1040}
+#materi #atas.show{opacity:1;pointer-events:auto}
+#materi.anim .reveal,#materi.anim .stg{opacity:0}
+@media (prefers-reduced-motion:reduce){#materi .blob{animation:none}
+#materi *{transition-duration:.01ms!important}}
+#materi{color:var(--ink);background:linear-gradient(160deg,var(--g1),var(--g2));border-radius:1.75rem;padding:clamp(.8rem,2.5vw,1.6rem)}
+#materi .mt-hero{padding:1.2rem 1rem 2rem;margin-bottom:1.5rem;border-radius:1.5rem}
+#materi .mt-tools{display:flex;justify-content:flex-end;gap:.5rem;position:relative;z-index:2;margin-bottom:1rem}
+#materi .mt-bab{scroll-margin-top:5.5rem}

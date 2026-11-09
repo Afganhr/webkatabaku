@@ -1,0 +1,607 @@
+[
+  {
+    "id": 1,
+    "baku": "aktivitas",
+    "tidakBaku": "aktifitas",
+    "keterangan": "Kata ini diserap dari bahasa Belanda activiteit. Akhiran -iteit disesuaikan menjadi -itas dan huruf v dipertahankan, sehingga ditulis aktivitas, bukan aktifitas. Contoh: Siswa mengikuti aktivitas belajar kelompok."
+  },
+  {
+    "id": 2,
+    "baku": "analisis",
+    "tidakBaku": "analisa",
+    "keterangan": "Kata ini diserap dari bahasa Inggris analysis. Huruf y disesuaikan menjadi i dan akhiran -sis dipertahankan, sehingga ditulis analisis, bukan analisa. Contoh: Siswa membuat analisis puisi."
+  },
+  {
+    "id": 3,
+    "baku": "apotek",
+    "tidakBaku": "apotik",
+    "keterangan": "Kata ini diserap dari bahasa Belanda apotheek. Gabungan huruf th disesuaikan menjadi t dan akhiran -eek menjadi -ek, sehingga ditulis apotek, bukan apotik. Contoh: Ibu membeli obat di apotek."
+  },
+  {
+    "id": 4,
+    "baku": "risiko",
+    "tidakBaku": "resiko",
+    "keterangan": "Kata ini diserap dari bahasa Belanda risico. Huruf c yang dibaca k disesuaikan menjadi k, sehingga ditulis risiko, bukan resiko. Contoh: Naik motor tanpa helm memiliki risiko tinggi."
+  },
+  {
+    "id": 5,
+    "baku": "izin",
+    "tidakBaku": "ijin",
+    "keterangan": "Kata ini diserap dari bahasa Arab izn. Huruf z pada kata asli dipertahankan, sehingga ditulis izin, bukan ijin. Contoh: Siswa meminta izin pulang lebih awal."
+  },
+  {
+    "id": 6,
+    "baku": "objek",
+    "tidakBaku": "obyek",
+    "keterangan": "Kata ini diserap dari bahasa Belanda object. Gabungan huruf ct disesuaikan menjadi k dan huruf j dipertahankan, sehingga ditulis objek, bukan obyek. Contoh: Objek penelitian ini adalah siswa kelas VII."
+  },
+  {
+    "id": 7,
+    "baku": "subjek",
+    "tidakBaku": "subyek",
+    "keterangan": "Kata ini diserap dari bahasa Belanda subject. Gabungan huruf ct disesuaikan menjadi k dan huruf j dipertahankan, sehingga ditulis subjek, bukan subyek. Contoh: Subjek dalam kalimat menjadi pelaku perbuatan."
+  },
+  {
+    "id": 8,
+    "baku": "objektif",
+    "tidakBaku": "obyektif",
+    "keterangan": "Kata ini diserap dari bahasa Belanda objectief. Gabungan huruf ct disesuaikan menjadi k, akhiran -ief menjadi -if, dan huruf j dipertahankan, sehingga ditulis objektif, bukan obyektif. Contoh: Penilaian guru harus objektif."
+  },
+  {
+    "id": 9,
+    "baku": "subjektif",
+    "tidakBaku": "subyektif",
+    "keterangan": "Kata ini diserap dari bahasa Belanda subjectief. Gabungan huruf ct disesuaikan menjadi k, akhiran -ief menjadi -if, dan huruf j dipertahankan, sehingga ditulis subjektif, bukan subyektif. Contoh: Pendapat itu terlalu subjektif."
+  },
+  {
+    "id": 10,
+    "baku": "proyek",
+    "tidakBaku": "projek",
+    "keterangan": "Kata ini diserap dari bahasa Belanda project. Huruf j pada kata asli disesuaikan menjadi y, sehingga ditulis proyek, bukan projek. Contoh: Siswa mengerjakan proyek kelompok."
+  },
+  {
+    "id": 11,
+    "baku": "kualitas",
+    "tidakBaku": "kwalitas",
+    "keterangan": "Kata ini diserap dari bahasa Belanda kwaliteit. Gabungan huruf kw disesuaikan menjadi ku dan akhiran -eit menjadi -as, sehingga ditulis kualitas, bukan kwalitas. Contoh: Kualitas buku ini sangat baik."
+  },
+  {
+    "id": 12,
+    "baku": "kuantitas",
+    "tidakBaku": "kwantitas",
+    "keterangan": "Kata ini diserap dari bahasa Belanda kwantiteit. Gabungan huruf kw disesuaikan menjadi ku dan akhiran -eit menjadi -as, sehingga ditulis kuantitas, bukan kwantitas. Contoh: Kuantitas soal ujian ada 40 butir."
+  },
+  {
+    "id": 13,
+    "baku": "praktik",
+    "tidakBaku": "praktek",
+    "keterangan": "Kata ini diserap dari bahasa Belanda praktijk. Akhiran -ijk disesuaikan menjadi -ik, sehingga ditulis praktik, bukan praktek. Contoh: Siswa melakukan praktik berpidato."
+  },
+  {
+    "id": 14,
+    "baku": "nasihat",
+    "tidakBaku": "nasehat",
+    "keterangan": "Kata ini diserap dari bahasa Arab nasihah. Huruf i pada suku kata kedua dipertahankan dan akhiran -ah menjadi -at, sehingga ditulis nasihat, bukan nasehat. Contoh: Ayah memberi nasihat kepada adik."
+  },
+  {
+    "id": 15,
+    "baku": "andal",
+    "tidakBaku": "handal",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia yang tidak memiliki huruf h di awal, sehingga ditulis andal, bukan handal. Contoh: Ia adalah pemain bola yang andal."
+  },
+  {
+    "id": 16,
+    "baku": "hakikat",
+    "tidakBaku": "hakekat",
+    "keterangan": "Kata ini diserap dari bahasa Arab haqiqah. Huruf q disesuaikan menjadi k dan huruf i dipertahankan, sehingga ditulis hakikat, bukan hakekat. Contoh: Hakikat belajar adalah menjadi lebih baik."
+  },
+  {
+    "id": 17,
+    "baku": "hafal",
+    "tidakBaku": "hapal",
+    "keterangan": "Kata ini diserap dari bahasa Arab hafiza. Huruf f pada kata asli dipertahankan, sehingga ditulis hafal, bukan hapal. Contoh: Aku hafal teks Pancasila."
+  },
+  {
+    "id": 18,
+    "baku": "silakan",
+    "tidakBaku": "silahkan",
+    "keterangan": "Kata ini dibentuk dari kata dasar sila dan akhiran -kan. Karena kata dasarnya tidak memakai huruf h, maka ditulis silakan, bukan silahkan. Contoh: Silakan duduk di sini."
+  },
+  {
+    "id": 19,
+    "baku": "sistem",
+    "tidakBaku": "sistim",
+    "keterangan": "Kata ini diserap dari bahasa Belanda systeem. Huruf y disesuaikan menjadi i dan akhiran -eem menjadi -em, sehingga ditulis sistem, bukan sistim. Contoh: Sistem pernapasan manusia terdiri dari beberapa organ."
+  },
+  {
+    "id": 20,
+    "baku": "standar",
+    "tidakBaku": "standart",
+    "keterangan": "Kata ini diserap dari bahasa Inggris standard. Huruf d di akhir kata tidak ditulis, sehingga ditulis standar, bukan standart. Contoh: Nilai standar kelulusan adalah 75."
+  },
+  {
+    "id": 21,
+    "baku": "teknik",
+    "tidakBaku": "tehnik",
+    "keterangan": "Kata ini diserap dari bahasa Belanda techniek. Gabungan huruf ch disesuaikan menjadi k, sehingga ditulis teknik, bukan tehnik. Contoh: Teknik membaca cepat perlu dilatih."
+  },
+  {
+    "id": 22,
+    "baku": "teknologi",
+    "tidakBaku": "tehnologi",
+    "keterangan": "Kata ini diserap dari bahasa Belanda technologie. Gabungan huruf ch disesuaikan menjadi k, sehingga ditulis teknologi, bukan tehnologi. Contoh: Teknologi membantu proses belajar."
+  },
+  {
+    "id": 23,
+    "baku": "jadwal",
+    "tidakBaku": "jadual",
+    "keterangan": "Kata ini diserap dari bahasa Arab jadwal. Huruf w pada kata asli dipertahankan, sehingga ditulis jadwal, bukan jadual. Contoh: Jadwal pelajaran hari ini padat."
+  },
+  {
+    "id": 24,
+    "baku": "kaus",
+    "tidakBaku": "kaos",
+    "keterangan": "Kata ini diserap dari bahasa Belanda kous. Bunyi ou disesuaikan menjadi au, sehingga ditulis kaus, bukan kaos. Contoh: Ia memakai kaus kaki putih."
+  },
+  {
+    "id": 25,
+    "baku": "kuitansi",
+    "tidakBaku": "kwitansi",
+    "keterangan": "Kata ini diserap dari bahasa Belanda kwitantie. Gabungan huruf kw disesuaikan menjadi ku dan akhiran -tie menjadi -si, sehingga ditulis kuitansi, bukan kwitansi. Contoh: Simpan kuitansi pembayaran dengan baik."
+  },
+  {
+    "id": 26,
+    "baku": "frekuensi",
+    "tidakBaku": "frekwensi",
+    "keterangan": "Kata ini diserap dari bahasa Belanda frequentie. Gabungan huruf qu disesuaikan menjadi ku dan akhiran -tie menjadi -si, sehingga ditulis frekuensi, bukan frekwensi. Contoh: Frekuensi olahraga sebaiknya tiga kali seminggu."
+  },
+  {
+    "id": 27,
+    "baku": "ekstrakurikuler",
+    "tidakBaku": "ekstrakulikuler",
+    "keterangan": "Kata ini diserap dari bahasa Inggris extracurricular. Huruf x disesuaikan menjadi ks, huruf c menjadi k, dan huruf r pada -ri- dipertahankan, sehingga ditulis ekstrakurikuler, bukan ekstrakulikuler. Contoh: Aku mengikuti ekstrakurikuler pramuka."
+  },
+  {
+    "id": 28,
+    "baku": "atlet",
+    "tidakBaku": "atlit",
+    "keterangan": "Kata ini diserap dari bahasa Inggris athlete. Gabungan huruf th disesuaikan menjadi t dan akhiran -ete menjadi -et, sehingga ditulis atlet, bukan atlit. Contoh: Atlet renang itu berlatih setiap pagi."
+  },
+  {
+    "id": 29,
+    "baku": "antre",
+    "tidakBaku": "antri",
+    "keterangan": "Dalam KBBI, kata ini ditulis dengan akhiran -re, sehingga ditulis antre, bukan antri. Kata turunannya juga memakai e, yaitu mengantre dan antrean. Contoh: Siswa mengantre di kantin."
+  },
+  {
+    "id": 30,
+    "baku": "November",
+    "tidakBaku": "Nopember",
+    "keterangan": "Kata ini diserap dari bahasa Belanda november. Huruf v pada kata asli dipertahankan, sehingga ditulis November, bukan Nopember. Contoh: Hari Pahlawan diperingati pada 10 November."
+  },
+  {
+    "id": 31,
+    "baku": "Februari",
+    "tidakBaku": "Pebruari",
+    "keterangan": "Kata ini diserap dari bahasa Belanda februari. Huruf f pada kata asli dipertahankan, sehingga ditulis Februari, bukan Pebruari. Contoh: Bulan Februari memiliki 28 atau 29 hari."
+  },
+  {
+    "id": 32,
+    "baku": "konsekuen",
+    "tidakBaku": "konsekwen",
+    "keterangan": "Kata ini diserap dari bahasa Belanda konsekwent. Gabungan huruf kw disesuaikan menjadi ku dan akhiran -ent menjadi -en, sehingga ditulis konsekuen, bukan konsekwen. Contoh: Ia konsekuen dengan janjinya."
+  },
+  {
+    "id": 33,
+    "baku": "mengubah",
+    "tidakBaku": "merubah",
+    "keterangan": "Kata ini dibentuk dari awalan me- dan kata dasar ubah. Kata dasarnya adalah ubah, bukan rubah (rubah adalah nama hewan sejenis serigala), sehingga ditulis mengubah, bukan merubah. Contoh: Ia ingin mengubah kebiasaan buruknya."
+  },
+  {
+    "id": 34,
+    "baku": "asas",
+    "tidakBaku": "azas",
+    "keterangan": "Kata ini diserap dari bahasa Arab asas. Huruf s pada kata asli dipertahankan, sehingga ditulis asas, bukan azas. Contoh: Gotong royong adalah asas kehidupan bermasyarakat."
+  },
+  {
+    "id": 35,
+    "baku": "azan",
+    "tidakBaku": "adzan",
+    "keterangan": "Kata ini diserap dari bahasa Arab adzan. Gabungan huruf dz disesuaikan menjadi z, sehingga ditulis azan, bukan adzan. Contoh: Azan magrib berkumandang."
+  },
+  {
+    "id": 36,
+    "baku": "istri",
+    "tidakBaku": "isteri",
+    "keterangan": "Kata ini diserap dari bahasa Sanskerta stri. Bunyi awal st- disesuaikan menjadi ist- tanpa huruf e, sehingga ditulis istri, bukan isteri. Contoh: Istri Pak Guru mengajar di sekolah yang sama."
+  },
+  {
+    "id": 37,
+    "baku": "lembap",
+    "tidakBaku": "lembab",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia yang berarti agak basah. Huruf akhirnya adalah p, sehingga ditulis lembap, bukan lembab. Contoh: Pakaian itu masih lembap."
+  },
+  {
+    "id": 38,
+    "baku": "napas",
+    "tidakBaku": "nafas",
+    "keterangan": "Kata ini diserap dari bahasa Arab nafas. Huruf f disesuaikan menjadi p, sehingga ditulis napas, bukan nafas. Contoh: Atlet itu menarik napas panjang sebelum berlari."
+  },
+  {
+    "id": 39,
+    "baku": "sepak bola",
+    "tidakBaku": "sepakbola",
+    "keterangan": "Kata ini terdiri dari dua kata, yaitu sepak dan bola. Karena masing-masing kata berdiri sendiri, keduanya ditulis terpisah, sehingga ditulis sepak bola, bukan sepakbola. Contoh: Adik gemar bermain sepak bola."
+  },
+  {
+    "id": 40,
+    "baku": "pikir",
+    "tidakBaku": "fikir",
+    "keterangan": "Kata ini diserap dari bahasa Arab fikr. Huruf f disesuaikan menjadi p, sehingga ditulis pikir, bukan fikir. Contoh: Pikirkan baik-baik sebelum menjawab."
+  },
+  {
+    "id": 41,
+    "baku": "ikhlas",
+    "tidakBaku": "iklas",
+    "keterangan": "Kata ini diserap dari bahasa Arab ikhlas. Gabungan huruf kh pada kata asli dipertahankan, sehingga ditulis ikhlas, bukan iklas. Contoh: Ia menolong dengan ikhlas."
+  },
+  {
+    "id": 42,
+    "baku": "khawatir",
+    "tidakBaku": "kuatir",
+    "keterangan": "Kata ini diserap dari bahasa Arab khawatir. Gabungan huruf kh pada kata asli dipertahankan, sehingga ditulis khawatir, bukan kuatir. Contoh: Ibu khawatir karena hujan deras."
+  },
+  {
+    "id": 43,
+    "baku": "Jumat",
+    "tidakBaku": "Jum'at",
+    "keterangan": "Kata ini diserap dari bahasa Arab jum'ah. Tanda petik (') dihilangkan dan akhiran -ah menjadi -at, sehingga ditulis Jumat, bukan Jum'at. Contoh: Salat Jumat dilaksanakan siang hari."
+  },
+  {
+    "id": 44,
+    "baku": "Kamis",
+    "tidakBaku": "Kemis",
+    "keterangan": "Kata ini diserap dari bahasa Arab khamis. Gabungan huruf kh disesuaikan menjadi k dan huruf a dipertahankan, sehingga ditulis Kamis, bukan Kemis. Contoh: Ujian dilaksanakan pada hari Kamis."
+  },
+  {
+    "id": 45,
+    "baku": "Senin",
+    "tidakBaku": "Senen",
+    "keterangan": "Kata ini diserap dari bahasa Arab al-itsnain. Bunyi awal itsn- disesuaikan menjadi sen- dan akhirannya menjadi -in, sehingga ditulis Senin, bukan Senen. Contoh: Upacara bendera dilaksanakan setiap hari Senin."
+  },
+  {
+    "id": 46,
+    "baku": "salat",
+    "tidakBaku": "shalat",
+    "keterangan": "Kata ini diserap dari bahasa Arab shalat. Gabungan huruf sh disesuaikan menjadi s, sehingga ditulis salat, bukan shalat. Contoh: Siswa salat berjamaah di musala."
+  },
+  {
+    "id": 47,
+    "baku": "zaman",
+    "tidakBaku": "jaman",
+    "keterangan": "Kata ini diserap dari bahasa Arab zaman. Huruf z pada kata asli dipertahankan, sehingga ditulis zaman, bukan jaman. Contoh: Zaman dahulu belum ada telepon seluler."
+  },
+  {
+    "id": 48,
+    "baku": "zakat",
+    "tidakBaku": "jakat",
+    "keterangan": "Kata ini diserap dari bahasa Arab zakah. Huruf z dipertahankan dan akhiran -ah menjadi -at, sehingga ditulis zakat, bukan jakat. Contoh: Keluarga itu membayar zakat fitrah."
+  },
+  {
+    "id": 49,
+    "baku": "jenazah",
+    "tidakBaku": "jenasah",
+    "keterangan": "Kata ini diserap dari bahasa Arab janazah. Huruf z pada kata asli dipertahankan, sehingga ditulis jenazah, bukan jenasah. Contoh: Jenazah dimakamkan setelah salat zuhur."
+  },
+  {
+    "id": 50,
+    "baku": "mazhab",
+    "tidakBaku": "madzhab",
+    "keterangan": "Kata ini diserap dari bahasa Arab madzhab. Gabungan huruf dz disesuaikan menjadi z, sehingga ditulis mazhab, bukan madzhab. Contoh: Ada empat mazhab fikih yang terkenal."
+  },
+  {
+    "id": 51,
+    "baku": "rezeki",
+    "tidakBaku": "rejeki",
+    "keterangan": "Kata ini diserap dari bahasa Arab rizq. Huruf z pada kata asli dipertahankan dan bunyi akhirnya disesuaikan menjadi -eki, sehingga ditulis rezeki, bukan rejeki. Contoh: Rezeki setiap orang berbeda-beda."
+  },
+  {
+    "id": 52,
+    "baku": "ijazah",
+    "tidakBaku": "ijasah",
+    "keterangan": "Kata ini diserap dari bahasa Arab ijazah. Huruf z pada kata asli dipertahankan, sehingga ditulis ijazah, bukan ijasah. Contoh: Siswa menerima ijazah setelah lulus."
+  },
+  {
+    "id": 53,
+    "baku": "manajemen",
+    "tidakBaku": "managemen",
+    "keterangan": "Kata ini diserap dari bahasa Inggris management. Huruf g yang dibaca j disesuaikan menjadi j, sehingga ditulis manajemen, bukan managemen. Contoh: Manajemen waktu penting bagi pelajar."
+  },
+  {
+    "id": 54,
+    "baku": "manajer",
+    "tidakBaku": "manager",
+    "keterangan": "Kata ini diserap dari bahasa Inggris manager. Huruf g yang dibaca j disesuaikan menjadi j, sehingga ditulis manajer, bukan manager. Contoh: Manajer toko itu ramah."
+  },
+  {
+    "id": 55,
+    "baku": "paham",
+    "tidakBaku": "faham",
+    "keterangan": "Kata ini sudah menjadi kata bahasa Indonesia yang ditulis dengan huruf p di awal, sehingga ditulis paham, bukan faham. Contoh: Aku paham penjelasan guru."
+  },
+  {
+    "id": 56,
+    "baku": "memengaruhi",
+    "tidakBaku": "mempengaruhi",
+    "keterangan": "Kata ini dibentuk dari awalan me- dan kata dasar pengaruh. Huruf p di awal kata dasar luluh, sehingga ditulis memengaruhi, bukan mempengaruhi. Contoh: Pergaulan dapat memengaruhi sikap seseorang."
+  },
+  {
+    "id": 57,
+    "baku": "mencolok",
+    "tidakBaku": "menyolok",
+    "keterangan": "Kata ini dibentuk dari awalan me- dan kata dasar colok. Kata dasar yang diawali huruf c tidak luluh, sehingga ditulis mencolok, bukan menyolok. Contoh: Warna bajunya sangat mencolok."
+  },
+  {
+    "id": 58,
+    "baku": "tenteram",
+    "tidakBaku": "tentram",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia yang memiliki dua huruf e (te-n-te-ram), sehingga ditulis tenteram, bukan tentram. Contoh: Desa itu aman dan tenteram."
+  },
+  {
+    "id": 59,
+    "baku": "teladan",
+    "tidakBaku": "tauladan",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia yang tidak memakai gabungan huruf au, sehingga ditulis teladan, bukan tauladan. Contoh: Guru harus menjadi teladan bagi siswa."
+  },
+  {
+    "id": 60,
+    "baku": "terampil",
+    "tidakBaku": "trampil",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia yang memakai huruf e pada suku kata pertama (te-ram-pil), sehingga ditulis terampil, bukan trampil. Contoh: Ia terampil membuat kerajinan tangan."
+  },
+  {
+    "id": 61,
+    "baku": "cabai",
+    "tidakBaku": "cabe",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia dengan akhiran -ai, sehingga ditulis cabai, bukan cabe. Contoh: Sambal itu dibuat dari cabai rawit."
+  },
+  {
+    "id": 62,
+    "baku": "detail",
+    "tidakBaku": "detil",
+    "keterangan": "Kata ini diserap dari bahasa Inggris dan Belanda detail. Ejaan kata asli dipertahankan, sehingga ditulis detail, bukan detil. Contoh: Jelaskan laporan itu secara detail."
+  },
+  {
+    "id": 63,
+    "baku": "definisi",
+    "tidakBaku": "difinisi",
+    "keterangan": "Kata ini diserap dari bahasa Inggris definition. Akhiran -tion disesuaikan menjadi -si dan suku kata pertama tetap de-, sehingga ditulis definisi, bukan difinisi. Contoh: Tuliskan definisi puisi menurut ahli."
+  },
+  {
+    "id": 64,
+    "baku": "ekstra",
+    "tidakBaku": "extra",
+    "keterangan": "Kata ini diserap dari bahasa Inggris extra. Huruf x disesuaikan menjadi ks, sehingga ditulis ekstra, bukan extra. Contoh: Siswa mendapat waktu ekstra untuk mengerjakan soal."
+  },
+  {
+    "id": 65,
+    "baku": "ekspor",
+    "tidakBaku": "eksport",
+    "keterangan": "Kata ini diserap dari bahasa Inggris export. Huruf x disesuaikan menjadi ks dan huruf t di akhir kata tidak ditulis, sehingga ditulis ekspor, bukan eksport. Contoh: Indonesia mengekspor kopi ke luar negeri."
+  },
+  {
+    "id": 66,
+    "baku": "impor",
+    "tidakBaku": "import",
+    "keterangan": "Kata ini diserap dari bahasa Inggris import. Huruf t di akhir kata tidak ditulis, sehingga ditulis impor, bukan import. Contoh: Negara itu mengimpor beras."
+  },
+  {
+    "id": 67,
+    "baku": "esai",
+    "tidakBaku": "essay",
+    "keterangan": "Kata ini diserap dari bahasa Inggris essay. Huruf ss disesuaikan menjadi s dan ay menjadi ai, sehingga ditulis esai, bukan essay. Contoh: Siswa menulis esai tentang lingkungan."
+  },
+  {
+    "id": 68,
+    "baku": "gubuk",
+    "tidakBaku": "gubug",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia yang diakhiri huruf k, sehingga ditulis gubuk, bukan gubug. Contoh: Petani beristirahat di gubuk dekat sawah."
+  },
+  {
+    "id": 69,
+    "baku": "hipotesis",
+    "tidakBaku": "hipotesa",
+    "keterangan": "Kata ini diserap dari bahasa Inggris hypothesis. Huruf y disesuaikan menjadi i dan akhiran -sis dipertahankan, sehingga ditulis hipotesis, bukan hipotesa. Contoh: Hipotesis penelitian harus diuji."
+  },
+  {
+    "id": 70,
+    "baku": "hierarki",
+    "tidakBaku": "hirarki",
+    "keterangan": "Kata ini diserap dari bahasa Inggris hierarchy. Gabungan huruf ch disesuaikan menjadi k dan huruf y menjadi i, sehingga ditulis hierarki, bukan hirarki. Contoh: Hierarki organisasi sekolah dipimpin kepala sekolah."
+  },
+  {
+    "id": 71,
+    "baku": "imbau",
+    "tidakBaku": "himbau",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia yang tidak diawali huruf h, sehingga ditulis imbau, bukan himbau. Contoh: Pemerintah mengimbau warga menjaga kebersihan."
+  },
+  {
+    "id": 72,
+    "baku": "karier",
+    "tidakBaku": "karir",
+    "keterangan": "Kata ini diserap dari bahasa Belanda carrière. Huruf c disesuaikan menjadi k dan akhiran -ière menjadi -ier, sehingga ditulis karier, bukan karir. Contoh: Ia ingin meniti karier sebagai guru."
+  },
+  {
+    "id": 73,
+    "baku": "kategori",
+    "tidakBaku": "katagori",
+    "keterangan": "Kata ini diserap dari bahasa Belanda categorie. Huruf c disesuaikan menjadi k dan akhiran -ie menjadi -i, sehingga ditulis kategori, bukan katagori. Contoh: Lomba dibagi menjadi tiga kategori."
+  },
+  {
+    "id": 74,
+    "baku": "komplet",
+    "tidakBaku": "komplit",
+    "keterangan": "Kata ini diserap dari bahasa Belanda compleet. Huruf c disesuaikan menjadi k dan akhiran -eet menjadi -et, sehingga ditulis komplet, bukan komplit. Contoh: Alat tulis siswa sudah komplet."
+  },
+  {
+    "id": 75,
+    "baku": "koordinasi",
+    "tidakBaku": "kordinasi",
+    "keterangan": "Kata ini diserap dari bahasa Inggris coordination. Huruf c disesuaikan menjadi k, dua huruf o dipertahankan, dan akhiran -tion menjadi -si, sehingga ditulis koordinasi, bukan kordinasi. Contoh: Ketua kelas berkoordinasi dengan wali kelas."
+  },
+  {
+    "id": 76,
+    "baku": "kreativitas",
+    "tidakBaku": "kreatifitas",
+    "keterangan": "Kata ini diserap dari bahasa Inggris creativity. Huruf c disesuaikan menjadi k, akhiran -ity menjadi -itas, dan huruf v dipertahankan, sehingga ditulis kreativitas, bukan kreatifitas. Contoh: Kreativitas siswa terlihat dalam pameran seni."
+  },
+  {
+    "id": 77,
+    "baku": "merek",
+    "tidakBaku": "merk",
+    "keterangan": "Kata ini diserap dari bahasa Belanda merk. Dalam bahasa Indonesia ditulis dengan huruf e sebelum k, sehingga ditulis merek, bukan merk. Contoh: Ia membeli sepatu merek lokal."
+  },
+  {
+    "id": 78,
+    "baku": "metode",
+    "tidakBaku": "metoda",
+    "keterangan": "Kata ini diserap dari bahasa Belanda methode. Gabungan huruf th disesuaikan menjadi t dan akhiran -e dipertahankan, sehingga ditulis metode, bukan metoda. Contoh: Guru menerapkan metode diskusi."
+  },
+  {
+    "id": 79,
+    "baku": "mi",
+    "tidakBaku": "mie",
+    "keterangan": "Kata ini diserap dari bahasa Tionghoa mi. Bunyinya cukup ditulis dengan satu huruf i, sehingga ditulis mi, bukan mie. Contoh: Aku makan mi goreng di kantin."
+  },
+  {
+    "id": 80,
+    "baku": "persentase",
+    "tidakBaku": "prosentase",
+    "keterangan": "Kata ini diserap dari bahasa Inggris percentage. Bagian per- dipertahankan dan akhiran -age menjadi -ase, sehingga ditulis persentase, bukan prosentase. Contoh: Persentase siswa yang lulus mencapai 95 persen."
+  },
+  {
+    "id": 81,
+    "baku": "provinsi",
+    "tidakBaku": "propinsi",
+    "keterangan": "Kata ini diserap dari bahasa Belanda provincie. Huruf v dipertahankan dan akhiran -cie menjadi -si, sehingga ditulis provinsi, bukan propinsi. Contoh: Jawa Timur adalah salah satu provinsi di Indonesia."
+  },
+  {
+    "id": 82,
+    "baku": "rapi",
+    "tidakBaku": "rapih",
+    "keterangan": "Kata ini bukan kata serapan, melainkan kata asli bahasa Indonesia yang tidak memakai huruf h di akhir, sehingga ditulis rapi, bukan rapih. Contoh: Seragam siswa harus rapi."
+  },
+  {
+    "id": 83,
+    "baku": "sekadar",
+    "tidakBaku": "sekedar",
+    "keterangan": "Kata ini dibentuk dari se- dan kata dasar kadar. Karena kata dasarnya kadar, maka ditulis sekadar, bukan sekedar. Contoh: Ia datang hanya sekadar menyapa."
+  },
+  {
+    "id": 84,
+    "baku": "sintesis",
+    "tidakBaku": "sintesa",
+    "keterangan": "Kata ini diserap dari bahasa Inggris synthesis. Huruf y disesuaikan menjadi i, gabungan huruf th menjadi t, dan akhiran -sis dipertahankan, sehingga ditulis sintesis, bukan sintesa. Contoh: Fotosintesis adalah proses sintesis makanan pada tumbuhan."
+  },
+  {
+    "id": 85,
+    "baku": "surga",
+    "tidakBaku": "sorga",
+    "keterangan": "Kata ini diserap dari bahasa Sanskerta svarga. Gabungan huruf sv disesuaikan menjadi s dan huruf u dipakai pada suku kata pertama, sehingga ditulis surga, bukan sorga. Contoh: Surga adalah balasan bagi orang yang berbuat baik."
+  },
+  {
+    "id": 86,
+    "baku": "sah",
+    "tidakBaku": "syah",
+    "keterangan": "Kata ini diserap dari bahasa Arab sahh. Dalam bahasa Indonesia ditulis tanpa huruf y, sehingga ditulis sah, bukan syah (syah adalah kata lain yang berarti raja). Contoh: Surat suara itu dinyatakan sah."
+  },
+  {
+    "id": 87,
+    "baku": "takwa",
+    "tidakBaku": "taqwa",
+    "keterangan": "Kata ini diserap dari bahasa Arab taqwa. Huruf q disesuaikan menjadi k, sehingga ditulis takwa, bukan taqwa. Contoh: Kita harus bertakwa kepada Tuhan."
+  },
+  {
+    "id": 88,
+    "baku": "teoretis",
+    "tidakBaku": "teoritis",
+    "keterangan": "Kata ini diserap dari bahasa Belanda theoretisch. Gabungan huruf th disesuaikan menjadi t dan akhiran -isch menjadi -is, sehingga ditulis teoretis, bukan teoritis. Contoh: Pembahasan itu masih bersifat teoretis."
+  },
+  {
+    "id": 89,
+    "baku": "zona",
+    "tidakBaku": "zone",
+    "keterangan": "Kata ini diserap dari bahasa Belanda zone. Akhiran -e disesuaikan menjadi -a, sehingga ditulis zona, bukan zone. Contoh: Sekolah berada di zona aman."
+  },
+  {
+    "id": 90,
+    "baku": "bus",
+    "tidakBaku": "bis",
+    "keterangan": "Kata ini diserap dari bahasa Inggris bus. Dalam bahasa Indonesia tetap ditulis dengan huruf u sesuai kata asli, sehingga ditulis bus, bukan bis. Contoh: Siswa berangkat studi tur naik bus."
+  },
+  {
+    "id": 91,
+    "baku": "kuota",
+    "tidakBaku": "quota",
+    "keterangan": "Kata ini diserap dari bahasa Inggris quota. Gabungan huruf qu disesuaikan menjadi ku, sehingga ditulis kuota, bukan quota. Contoh: Kuota penerima beasiswa terbatas."
+  },
+  {
+    "id": 92,
+    "baku": "sopir",
+    "tidakBaku": "supir",
+    "keterangan": "Kata ini diserap dari bahasa Prancis chauffeur. Bunyinya disesuaikan dengan pelafalan menjadi sopir dengan huruf o, sehingga ditulis sopir, bukan supir. Contoh: Sopir bus itu mengemudi dengan hati-hati."
+  },
+  {
+    "id": 93,
+    "baku": "konkret",
+    "tidakBaku": "kongkrit",
+    "keterangan": "Kata ini diserap dari bahasa Belanda concreet. Huruf c disesuaikan menjadi k dan akhiran -eet menjadi -et, sehingga ditulis konkret, bukan kongkrit. Contoh: Berikan contoh yang konkret."
+  },
+  {
+    "id": 94,
+    "baku": "Prancis",
+    "tidakBaku": "Perancis",
+    "keterangan": "Nama negara ini diserap dari bahasa Inggris dan Prancis France. Bunyi awalnya disesuaikan menjadi pra- tanpa huruf e di antara p dan r, sehingga ditulis Prancis, bukan Perancis. Contoh: Menara Eiffel terletak di Prancis."
+  },
+  {
+    "id": 95,
+    "baku": "kedaluwarsa",
+    "tidakBaku": "kadaluarsa",
+    "keterangan": "Kata ini dibentuk dari awalan ke- dan kata dasar daluwarsa. Kata dasarnya memakai gabungan huruf uw, sehingga ditulis kedaluwarsa, bukan kadaluarsa. Contoh: Jangan makan makanan yang sudah kedaluwarsa."
+  },
+  {
+    "id": 96,
+    "baku": "silaturahmi",
+    "tidakBaku": "silaturahim",
+    "keterangan": "Kata ini diserap dari bahasa Arab silaturrahim. Akhirannya disesuaikan menjadi -rahmi, sehingga ditulis silaturahmi, bukan silaturahim. Contoh: Keluarga besar bersilaturahmi saat Lebaran."
+  },
+  {
+    "id": 97,
+    "baku": "mengonsumsi",
+    "tidakBaku": "mengkonsumsi",
+    "keterangan": "Kata ini dibentuk dari awalan meng- dan kata dasar konsumsi. Huruf k di awal kata dasar luluh, sehingga ditulis mengonsumsi, bukan mengkonsumsi. Contoh: Kita perlu mengonsumsi sayur setiap hari."
+  },
+  {
+    "id": 98,
+    "baku": "tes",
+    "tidakBaku": "test",
+    "keterangan": "Kata ini diserap dari bahasa Inggris test. Huruf t di akhir kata tidak ditulis, sehingga ditulis tes, bukan test. Contoh: Siswa mengikuti tes membaca."
+  },
+  {
+    "id": 99,
+    "baku": "sekretaris",
+    "tidakBaku": "sekertaris",
+    "keterangan": "Kata ini diserap dari bahasa Belanda secretaris. Huruf c disesuaikan menjadi k dan urutan hurufnya se-kre-ta-ris dipertahankan, sehingga ditulis sekretaris, bukan sekertaris. Contoh: Sekretaris OSIS mencatat hasil rapat."
+  },
+  {
+    "id": 100,
+    "baku": "tim",
+    "tidakBaku": "team",
+    "keterangan": "Kata ini diserap dari bahasa Inggris team. Bunyinya disesuaikan dengan pelafalan menjadi tim, sehingga ditulis tim, bukan team. Contoh: Tim voli sekolah memenangkan pertandingan."
+  },
+   {"id": 101,
+    "baku": "cedera",
+    "tidakBaku": "cidera",
+    "keterangan": "Kata ini berasal dari bahasa Sanskerta chidra atau pelafalan yang mengalami pergeseran menjadi cedera. Contoh: Melakukan pemanasan sebelum berolahraga sangat penting untuk mencegah risiko cedera otot."
+  }
+]

@@ -1,0 +1,262 @@
+{
+  "jenis_soal": "Pilihan Ganda",
+  "topik": "Kata Baku dan Tidak Baku",
+  "jumlah_soal": 10,
+  "paket": [
+    {
+      "id": "p1",
+      "judul": "Paket 1",
+      "soal": [
+        {
+          "nomor": 1,
+          "soal": "Pernyataan yang tepat tentang kata baku dan kata tidak baku adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Kata baku hanya digunakan dalam percakapan santai."
+            },
+            {
+              "label": "B",
+              "teks": "Kata baku sesuai dengan kaidah bahasa Indonesia, sedangkan kata tidak baku tidak sesuai dengan kaidah tersebut atau digunakan dalam ragam tidak resmi."
+            },
+            {
+              "label": "C",
+              "teks": "Kata tidak baku selalu lebih tepat untuk dokumen resmi."
+            },
+            {
+              "label": "D",
+              "teks": "Kata baku tidak perlu memperhatikan ejaan."
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Kata baku adalah kata yang bentuk dan penggunaannya sesuai dengan kaidah bahasa Indonesia (ejaan, tata bahasa, dan KBBI), sedangkan kata tidak baku menyimpang dari kaidah tersebut dan lazim dipakai dalam ragam tidak resmi. Opsi A salah karena kata baku justru digunakan dalam situasi resmi. Opsi C salah karena dokumen resmi menuntut kata baku. Opsi D salah karena kata baku harus memperhatikan ejaan."
+        },
+        {
+          "nomor": 2,
+          "soal": "Perhatikan paragraf berikut.\n\"Dalam laporan kegiatan, siswa menulis bahwa mereka mengunjungi apotik dan mencatat resiko penggunaan obat tanpa resep.\"\nKata tidak baku dalam paragraf tersebut adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "laporan dan kegiatan"
+            },
+            {
+              "label": "B",
+              "teks": "siswa dan obat"
+            },
+            {
+              "label": "C",
+              "teks": "apotik dan resiko"
+            },
+            {
+              "label": "D",
+              "teks": "mengunjungi dan resep"
+            }
+          ],
+          "kunci_jawaban": "C",
+          "jawaban_lengkap": "apotik → apotek; resiko → risiko.",
+          "penjelasan": "Menurut KBBI, bentuk baku yang benar adalah \"apotek\" dan \"risiko\", sehingga \"apotik\" dan \"resiko\" merupakan kata tidak baku. Kata lain pada pilihan lainnya (laporan, kegiatan, siswa, obat, mengunjungi, resep) sudah baku."
+        },
+        {
+          "nomor": 3,
+          "soal": "Kalimat yang paling tepat digunakan dalam pengumuman resmi adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Para peserta diminta ngantri dengan tertib."
+            },
+            {
+              "label": "B",
+              "teks": "Para peserta diminta mengantre dengan tertib di depan ruang administrasi."
+            },
+            {
+              "label": "C",
+              "teks": "Silahkan para peserta antri di depan ruang administrasi."
+            },
+            {
+              "label": "D",
+              "teks": "Peserta diharap ngantri sebelum acara dimulai."
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Kalimat B menggunakan kata baku \"mengantre\" dan struktur kalimat yang sesuai untuk pengumuman resmi. Opsi A dan D memakai \"ngantri\" yang merupakan bentuk percakapan (tidak baku). Opsi C memakai \"silahkan\" dan \"antri\"; bentuk bakunya adalah \"silakan\" dan \"antre\"."
+        },
+        {
+          "soal": "Ciri kata baku yang tepat adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "digunakan hanya dalam percakapan akrab dengan teman sebaya."
+            },
+            {
+              "label": "B",
+              "teks": "penulisan dan pengucapannya sesuai dengan kaidah bahasa Indonesia serta tercantum dalam KBBI."
+            },
+            {
+              "label": "C",
+              "teks": "bentuknya dipengaruhi oleh dialek daerah penuturnya."
+            },
+            {
+              "label": "D",
+              "teks": "boleh berubah-ubah sesuai kebiasaan penutur."
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Kata baku ditulis dan diucapkan sesuai kaidah bahasa Indonesia serta tercantum dalam KBBI. Opsi A salah karena kata baku dipakai dalam situasi resmi, opsi C salah karena bentuk baku tidak mengikuti dialek, dan opsi D salah karena bentuk baku bersifat tetap.",
+          "nomor": 4
+        },
+        {
+          "soal": "Kalimat yang seluruh katanya baku adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Rina mengikuti kegiatan ekstrakurikuler dengan penuh semangat dan aktifitas."
+            },
+            {
+              "label": "B",
+              "teks": "Guru memberi nasehat kepada siswa yang terlambat."
+            },
+            {
+              "label": "C",
+              "teks": "Siswa menyerahkan kuitansi pembayaran kepada bendahara sekolah."
+            },
+            {
+              "label": "D",
+              "teks": "Panitia menghimbau peserta menjaga kebersihan."
+            }
+          ],
+          "kunci_jawaban": "C",
+          "penjelasan": "Kalimat C seluruhnya baku. Opsi A: aktifitas → aktivitas; opsi B: nasehat → nasihat; opsi D: menghimbau → mengimbau.",
+          "nomor": 5
+        }
+      ],
+      "jumlah_soal": 5
+    },
+    {
+      "id": "p2",
+      "judul": "Paket 2",
+      "soal": [
+        {
+          "soal": "Kalimat yang paling tepat digunakan dalam sambutan resmi pada upacara sekolah adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Mari kita mensukseskan acara ini dengan kerjasama yang baik."
+            },
+            {
+              "label": "B",
+              "teks": "Mari kita menyukseskan acara ini dengan kerja sama yang baik."
+            },
+            {
+              "label": "C",
+              "teks": "Mari kita sukseskan acara ini dengan kerjasama yang baik."
+            },
+            {
+              "label": "D",
+              "teks": "Mari kita mensukseskan acara ini dengan kerja sama yang baik."
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku adalah \"menyukseskan\" (bukan mensukseskan) dan \"kerja sama\" (ditulis terpisah, bukan kerjasama), sehingga kalimat B yang tepat.",
+          "nomor": 6
+        },
+        {
+          "soal": "Rujukan utama untuk memastikan bentuk baku suatu kata adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "unggahan di media sosial"
+            },
+            {
+              "label": "B",
+              "teks": "Kamus Besar Bahasa Indonesia (KBBI)"
+            },
+            {
+              "label": "C",
+              "teks": "percakapan sehari-hari"
+            },
+            {
+              "label": "D",
+              "teks": "judul berita daring"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku suatu kata ditetapkan dalam Kamus Besar Bahasa Indonesia (KBBI), bukan oleh media sosial, percakapan, atau judul berita.",
+          "nomor": 7
+        },
+        {
+          "soal": "Pasangan kata tidak baku – baku yang benar adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "kreatifitas – kreativitas"
+            },
+            {
+              "label": "B",
+              "teks": "ekstrem – ekstrim"
+            },
+            {
+              "label": "C",
+              "teks": "konsekuen – konsekwen"
+            },
+            {
+              "label": "D",
+              "teks": "izin – ijin"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Pasangan A benar: kreatifitas (tidak baku) – kreativitas (baku). Pada opsi B, C, dan D urutannya terbalik karena bentuk baku (ekstrem, konsekuen, izin) berada di sebelah kiri.",
+          "nomor": 8
+        },
+        {
+          "soal": "Perhatikan kalimat berikut.\n\"Pelatih meminta atlet tidak berlatih secara ekstrim agar tidak cidera.\"\nKata tidak baku dalam kalimat tersebut adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "pelatih dan atlet"
+            },
+            {
+              "label": "B",
+              "teks": "ekstrim dan cidera"
+            },
+            {
+              "label": "C",
+              "teks": "berlatih dan secara"
+            },
+            {
+              "label": "D",
+              "teks": "meminta dan agar"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku yang benar: ekstrim → ekstrem dan cidera → cedera. Kata pada opsi lain sudah baku.",
+          "nomor": 9
+        },
+        {
+          "soal": "Kalimat yang menggunakan kata baku dan tepat untuk situasi resmi adalah ....",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Rektor menyampaikan pidato di hadapan para cendikiawan dan tamu undangan."
+            },
+            {
+              "label": "B",
+              "teks": "Rektor menyampaikan pidato di hadapan para cendekiawan dan tamu undangan."
+            },
+            {
+              "label": "C",
+              "teks": "Rektor menyampaikan pidato dihadapan para cendekiawan dan tamu undangan."
+            },
+            {
+              "label": "D",
+              "teks": "Rektor ngasih pidato di hadapan para cendekiawan dan tamu undangan."
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Opsi A: cendikiawan → cendekiawan; opsi C: dihadapan → di hadapan (di sebagai kata depan ditulis terpisah); opsi D: \"ngasih\" tidak baku. Hanya opsi B yang baku.",
+          "nomor": 10
+        }
+      ],
+      "jumlah_soal": 5
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+/* Bootstrap 5.3.8 dipakai sebagai dasar; file ini hanya menyetel tema biru-putih-kuning */
+:root{
+  --bs-primary:#1d4ed8; --bs-primary-rgb:29,78,216;
+  --bs-body-font-family:'Poppins',system-ui,sans-serif;
+  --bs-body-bg:#eff6ff;
+}
+.btn-primary{--bs-btn-bg:#1d4ed8;--bs-btn-border-color:#1d4ed8;--bs-btn-hover-bg:#1e3a8a;--bs-btn-hover-border-color:#1e3a8a;--bs-btn-active-bg:#1e3a8a;--bs-btn-active-border-color:#1e3a8a;--bs-btn-disabled-bg:#1d4ed8;--bs-btn-disabled-border-color:#1d4ed8}
+.btn-outline-primary{--bs-btn-color:#1d4ed8;--bs-btn-border-color:#1d4ed8;--bs-btn-hover-bg:#1d4ed8;--bs-btn-hover-border-color:#1d4ed8;--bs-btn-active-bg:#1d4ed8;--bs-btn-active-border-color:#1d4ed8}
+.btn-warning{--bs-btn-bg:#facc15;--bs-btn-border-color:#facc15;--bs-btn-color:#1e3a8a;--bs-btn-hover-bg:#eab308;--bs-btn-hover-border-color:#eab308;--bs-btn-hover-color:#1e3a8a}
+.nav-pills{--bs-nav-pills-link-active-bg:#1d4ed8}
+.nav-pills .nav-link:not(.active){background:#fff;color:#1d4ed8}
+.navbar .nav-link.aktif{background:#1d4ed8;color:#fff}
+.progress{--bs-progress-bar-bg:#facc15;--bs-progress-bg:#dbeafe}
+.list-group{--bs-list-group-active-bg:#1d4ed8;--bs-list-group-active-border-color:#1d4ed8}
+.logo-ikon{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#1d4ed8;color:#fff}
+.kartu{border:0;border-radius:1.25rem;box-shadow:0 8px 24px rgba(30,64,175,.10)}
+.ikon{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:#dbeafe;font-size:1.4rem}
+.pintas{transition:transform .2s,box-shadow .2s}
+.pintas:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(30,64,175,.18)}
+.sidebar{position:sticky;top:5rem}
+.list-group-item .selesai{color:#facc15}
+@media (max-width:767.98px){.sidebar{position:static}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

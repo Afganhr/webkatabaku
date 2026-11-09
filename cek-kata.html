@@ -1,0 +1,64 @@
+<!-- =====================================================================
+     POTONGAN HTML FITUR "CEK KATA" — tiga bagian, ditempel ke index.html
+     ===================================================================== -->
+
+<!-- ===== BAGIAN A: tempel di <head> index.html, sesudah <link ... style.css> ===== -->
+<link rel="stylesheet" href="cek-kata.css">
+
+
+<!-- ===== BAGIAN B: item menu =====
+     Tempel di dalam <ul class="navbar-nav"> pada navbar, sesudah menu "Latihan & Kuis". -->
+<li class="nav-item"><button class="nav-link rounded-pill px-3" data-hal="cekkata">Cek Kata</button></li>
+
+
+<!-- ===== BAGIAN C: halaman Cek Kata =====
+     Tempel di dalam <main>, sesudah <section id="latihan"> ... </section>
+     (hapus <section id="cekkata"> versi lama jika ada) -->
+<section id="cekkata" class="halaman d-none">
+
+  <div class="ck-hero">
+    <span class="ck-stiker s1" aria-hidden="true">✏️</span>
+    <span class="ck-stiker s2" aria-hidden="true">📚</span>
+    <span class="ck-stiker s3" aria-hidden="true">✅</span>
+    <span class="ck-chip">✨ Kamus Mini Interaktif</span>
+    <h2 class="ck-judul">Cek Kata</h2>
+    <p class="ck-sub">Ragu menulis sebuah kata? Ketik di sini dan lihat bentuk bakunya.</p>
+
+    <form id="ck-form" class="ck-cari" autocomplete="off">
+      <span class="ck-ikon" aria-hidden="true">🔍</span>
+      <input id="ck-input" type="text" placeholder="Ketik kata di sini…" aria-label="Kata yang diperiksa" disabled>
+      <button id="ck-tombol" type="submit" class="btn btn-warning rounded-pill px-4 fw-semibold" disabled>Cek</button>
+      <div id="ck-saran" class="list-group ck-saran d-none" role="listbox"></div>
+    </form>
+    <div class="ck-aksi">
+      <button type="button" id="ck-acak" class="btn btn-light btn-sm rounded-pill fw-semibold" disabled>🎲 Kata Acak</button>
+      <span class="ck-stat" id="ck-stat"></span>
+    </div>
+  </div>
+
+  <!-- Penjelasan keterbatasan daftar kata -->
+  <div class="ck-info">
+    <span class="ck-info-ikon" aria-hidden="true">💡</span>
+    <div>
+      <strong>Perlu diketahui:</strong> daftar kata pada fitur ini terbatas, yaitu
+      <span id="ck-jumlah">…</span> pasang kata baku dan tidak baku yang sering dijumpai dalam
+      kehidupan sehari-hari. Jika kata yang kamu cari belum ada, periksa juga langsung di KBBI.
+    </div>
+  </div>
+
+  <ul class="nav nav-pills ck-tab" role="tablist">
+    <li class="nav-item" role="presentation"><button class="nav-link active rounded-pill" id="ck-btn-cek" data-bs-toggle="pill" data-bs-target="#ck-tab-cek" type="button" role="tab">🔍 Hasil Cek</button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#ck-tab-jelajah" type="button" role="tab">📖 Jelajah A–Z</button></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="ck-tab-cek" role="tabpanel">
+      <div id="ck-hasil" aria-live="polite"></div>
+    </div>
+    <div class="tab-pane fade" id="ck-tab-jelajah" role="tabpanel">
+      <div id="ck-abjad" class="ck-abjad"></div>
+      <div id="ck-daftar" class="row g-3"></div>
+    </div>
+  </div>
+
+</section>

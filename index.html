@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KataBaku.id</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap 5.3.8 (versi stabil terbaru) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cek-kata.css">
+<link rel="stylesheet" href="css/materi.css">
+<link rel="stylesheet" href="css/latihan.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/beranda.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top kb-nav">
+  <div class="container">
+    <a class="navbar-brand kb-brand" href="#beranda" data-hal="beranda">
+      <span class="logo-ikon">K</span>
+      <span class="kb-brand-teks"><b>KataBaku<span>.id</span></b><small>Belajar Kata Baku</small></span>
+    </a>
+    <button class="navbar-toggler kb-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><button class="nav-link" data-hal="beranda"><i data-lucide="house"></i><span>Beranda</span></button></li>
+        <li class="nav-item"><button class="nav-link" data-hal="pengantar"><i data-lucide="lightbulb"></i><span>Pengantar</span></button></li>
+        <li class="nav-item"><button class="nav-link" data-hal="cek_kata"><i data-lucide="spell-check"></i><span>Cek Kata</span></button></li>
+        <li class="nav-item"><button class="nav-link" data-hal="materi"><i data-lucide="book-open"></i><span>Materi Inti</span></button></li>
+        <li class="nav-item"><button class="nav-link" data-hal="latihan"><i data-lucide="clipboard-check"></i><span>Latihan</span></button></li>
+        <!-- <li class="nav-item"><button class="nav-link" data-hal="game"><i data-lucide="gamepad-2"></i><span>Game</span></button></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4 py-md-5">
+
+<!-- ============ BERANDA ============ -->
+<!-- Gaya: css/beranda.css | Interaksi: JS/beranda.js | Teks bisa diedit langsung di sini -->
+<section id="beranda" class="halaman">
+
+  <!-- Hero -->
+  <div class="bn-hero bn-in">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="bn-chip"><i data-lucide="sparkles"></i> Media pembelajaran interaktif</span>
+        <h3 class="fw-bold text-primary-emphasis mt-3 mb-0">Selamat Datang di</h3>
+        <h1 class="display-4 fw-bold bn-grad">KataBaku.id</h1>
+        <p class="lead">Media pembelajaran interaktif tentang bentuk kata baku dan tidak baku dalam bahasa Indonesia</p>
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <button class="btn btn-warning btn-lg rounded-pill px-4 fw-semibold" data-hal="materi">Mulai Belajar</button>
+          <button class="btn btn-outline-primary btn-lg rounded-pill px-4" data-hal="pengantar">Pengantar</button>
+        </div>
+        <div class="bn-stats">
+          <div class="bn-stat"><b data-n="5">0</b><small>Materi</small></div>
+          <div class="bn-stat"><b id="bn-jml">…</b><small>Pasang kata</small></div>
+          <div class="bn-stat"><b data-n="4">0</b><small>Jenis latihan</small></div>
+        </div>
+      </div>
+      <div class="col-lg-5 text-center" aria-hidden="true">
+        <img src="img/indonesia_school.png" alt="" class="img-fluid bn-img" style="max-width:340px">
+      </div>
+    </div>
+  </div>
+
+  <!-- Kata hari ini + Tebak cepat harian (waktu WIB, data dari databaku.json) -->
+  <div class="row g-4">
+    <div class="col-lg-5"><div class="card bn-card c-biru h-100"><div class="card-body">
+      <span class="bn-label"><i data-lucide="calendar-days"></i> Kata hari ini</span>
+      <p class="bn-ket">Berganti setiap hari pukul 00.00 WIB.</p>
+      <div id="bn-kh" class="placeholder-glow"><span class="placeholder col-8"></span><span class="placeholder col-5"></span></div>
+    </div></div></div>
+    <div class="col-lg-7"><div class="card bn-card c-ungu h-100"><div class="card-body">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span class="bn-label"><i data-lucide="zap"></i> Tebak cepat: mana yang baku?</span>
+        <span class="bn-skor">Benar <b id="bn-benar">0</b> &middot; Beruntun <b id="bn-runtun">0</b> hari &middot; Terbaik <b id="bn-terbaik">0</b></span>
+      </div>
+      <p class="bn-ket">Satu soal setiap hari. Soal baru muncul pukul 00.00 WIB.</p>
+      <div id="bn-tebak" class="placeholder-glow"><span class="placeholder col-12" style="height:3.5rem"></span></div>
+    </div></div></div>
+  </div>
+
+  <!-- Tiga kartu informasi (klik untuk membuka halaman) -->
+  <div class="row g-4">
+    <div class="col-md-4"><a href="#materi" data-hal="materi" class="card bn-card bn-link c-biru h-100"><div class="card-body">
+      <div class="bn-ico mb-3"><i data-lucide="book-open"></i></div><h5 class="card-title">Pahami Konsepnya</h5>
+      <p class="card-text">Kata baku mengikuti kaidah pengucapan dan ejaan menurut KBBI, sedangkan kata tidak baku menyimpang dari kaidah itu.</p>
+      <span class="bn-go">Buka Materi Inti <i data-lucide="arrow-right"></i></span></div></a></div>
+    <div class="col-md-4"><a href="#cek_kata" data-hal="cek_kata" class="card bn-card bn-link c-ungu h-100"><div class="card-body">
+      <div class="bn-ico mb-3"><i data-lucide="spell-check"></i></div><h5 class="card-title">Periksa Kata</h5>
+      <p class="card-text">Ragu menulis sebuah kata? Ketik di Cek Kata untuk melihat bentuk bakunya, atau jelajahi daftar A–Z.</p>
+      <span class="bn-go">Buka Cek Kata <i data-lucide="arrow-right"></i></span></div></a></div>
+    <div class="col-md-4"><a href="#latihan" data-hal="latihan" class="card bn-card bn-link c-kuning h-100"><div class="card-body">
+      <div class="bn-ico mb-3"><i data-lucide="trophy"></i></div><h5 class="card-title">Uji Kemampuan</h5>
+      <p class="card-text">Kerjakan latihan pilihan ganda, isian singkat, pasangan kata, dan perbaikan kalimat.</p>
+      <span class="bn-go">Buka Latihan <i data-lucide="arrow-right"></i></span></div></a></div>
+  </div>
+
+  <!-- Tujuan pembelajaran -->
+  <div class="card bn-card c-hijau"><div class="card-body d-flex gap-3">
+    <div class="bn-ico flex-shrink-0"><i data-lucide="target"></i></div>
+    <div>
+      <h4 class="mb-1">Tujuan Pembelajaran</h4>
+      <p class="text-secondary">Setelah mempelajari materi ini, kamu diharapkan mampu:</p>
+      <ul class="bn-poin">
+        <li>Memahami pengertian dan ciri kata baku dan tidak baku.</li>
+        <li>Mengidentifikasi bentuk kata baku dan tidak baku dalam kalimat dan paragraf.</li>
+        <li>Memperbaiki kata tidak baku menjadi bentuk baku dengan merujuk pada KBBI.</li>
+        <li>Menggunakan kata baku dalam menulis teks dan berbicara dalam situasi resmi.</li>
+      </ul>
+    </div>
+  </div></div>
+
+  <!-- Pintasan -->
+  <div class="row g-4">
+    <div class="col-6 col-lg-3"><button type="button" class="bn-pintas c-biru" data-hal="pengantar"><span class="bn-ico"><i data-lucide="lightbulb"></i></span><span>Pengantar</span><i data-lucide="chevron-right"></i></button></div>
+    <div class="col-6 col-lg-3"><button type="button" class="bn-pintas c-ungu" data-hal="cek_kata"><span class="bn-ico"><i data-lucide="spell-check"></i></span><span>Cek Kata</span><i data-lucide="chevron-right"></i></button></div>
+    <div class="col-6 col-lg-3"><button type="button" class="bn-pintas c-kuning" data-hal="materi"><span class="bn-ico"><i data-lucide="book-open"></i></span><span>Materi Inti</span><i data-lucide="chevron-right"></i></button></div>
+    <div class="col-6 col-lg-3"><button type="button" class="bn-pintas c-hijau" data-hal="latihan"><span class="bn-ico"><i data-lucide="clipboard-check"></i></span><span>Latihan</span><i data-lucide="chevron-right"></i></button></div>
+  </div>
+</section>
+
+<!-- ============ PENGANTAR ============ -->
+<section id="pengantar" class="halaman d-none">
+  <div class="pg-hero">
+    <span class="bn-chip"><i data-lucide="lightbulb"></i> Pengantar</span>
+    <h1 class="fw-bold text-primary-emphasis mt-3">Mengapa Kata Baku Itu Penting?</h1>
+    <h5 class="text-secondary mb-0">Sebelum masuk ke materi, bandingkan dua cara menulis surat izin yang sama.</h5>
+  </div>
+
+  <!-- Dua kartu perbandingan (interaktif: ketuk kata merah untuk memperbaikinya) -->
+  <div class="row g-4">
+    <div class="col-lg-6"><div id="pg-kiri" class="card bn-card c-merah h-100"><div class="card-body">
+      <div class="d-flex justify-content-between align-items-center mb-2"><span class="bn-label"><i data-lucide="message-circle"></i> Gaya percakapan</span><small class="text-secondary">Diperbaiki <b id="pg-n">0</b>/5</small></div>
+      <p class="pg-kal">Saya mau minta <button type="button" class="pg-w" data-tb="ijin" data-b="izin" aria-pressed="false">ijin</button> kalau anak saya <button type="button" class="pg-w" data-tb="nggak" data-b="tidak" aria-pressed="false">nggak</button> bisa <button type="button" class="pg-w" data-tb="ngikutin" data-b="mengikuti" aria-pressed="false">ngikutin</button> pelajaran hari Jumat karena sakit. Saya juga <button type="button" class="pg-w" data-tb="ngelampirin" data-b="melampirkan" aria-pressed="false">ngelampirin</button> surat keterangan dari dokter. <button type="button" class="pg-w" data-tb="Makasih" data-b="Terima kasih" aria-pressed="false">Makasih</button> atas perhatian Bapak/Ibu.</p>
+      <small class="text-secondary"><i data-lucide="mouse-pointer-click"></i> Ketuk kata bergaris merah untuk menggantinya dengan bentuk baku.</small>
+      <div id="pg-ok" class="pg-ok" hidden><b>Mantap!</b> Kalimatmu sudah baku dan siap dipakai untuk surat resmi. <button type="button" class="btn btn-sm bn-btn ms-1" data-hal="materi">Lanjut ke Materi</button></div>
+    </div></div></div>
+    <div class="col-lg-6"><div class="card bn-card c-hijau h-100"><div class="card-body">
+      <div class="mb-2"><span class="bn-label"><i data-lucide="mail"></i> Gaya surat resmi</span></div>
+      <p class="pg-kal">Saya selaku orang tua/wali dari siswa kelas VIII-B memohon <b>izin</b> bahwa anak saya <b>tidak</b> dapat <b>mengikuti</b> kegiatan pembelajaran pada hari Jumat karena sakit. Sebagai bukti, saya <b>melampirkan</b> surat keterangan dari dokter. Atas perhatian dan izin Bapak/Ibu, saya mengucapkan <b>terima kasih</b>.</p>
+      <small class="text-secondary">Kata yang dicetak tebal adalah bentuk baku.</small>
+    </div></div></div>
+  </div>
+
+  <!-- Pertanyaan pemantik -->
+  <div class="card bn-card c-ungu"><div class="card-body">
+    <div class="d-flex align-items-center gap-3 mb-3"><div class="bn-ico"><i data-lucide="circle-help"></i></div><div><h5 class="mb-0">Pertanyaan Pemantik</h5><small class="text-secondary">Coba jawab dulu dalam hati, lalu ketuk untuk melihat jawabannya.</small></div></div>
+    <div class="accordion pg-acc" id="pg-acc">
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pg-q1">1. Mana yang benar: ijin atau izin?</button></h2>
+        <div id="pg-q1" class="accordion-collapse collapse" data-bs-parent="#pg-acc"><div class="accordion-body">Bentuk baku adalah <b>izin</b>. Kata <i>ijin</i> merupakan bentuk tidak baku dari izin.</div></div></div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pg-q2">2. Kapan kita perlu menggunakan kata baku?</button></h2>
+        <div id="pg-q2" class="accordion-collapse collapse" data-bs-parent="#pg-acc"><div class="accordion-body">Dalam situasi resmi: komunikasi resmi (misalnya surat dinas atau surat undangan), wacana teknis (laporan penelitian, buku pelajaran, karya ilmiah), pembicaraan di depan umum (pidato, presentasi di kelas, seminar), dan pembicaraan dengan orang yang dihormati (guru, kepala sekolah, atau orang yang lebih tua).</div></div></div>
+      <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pg-q3">3. Apakah kata yang sering kita ucapkan pasti baku?</button></h2>
+        <div id="pg-q3" class="accordion-collapse collapse" data-bs-parent="#pg-acc"><div class="accordion-body">Belum tentu. Kebiasaan bukan jaminan: kita cenderung mengira sebuah kata baku hanya karena sering diucapkan, dan bentuk baku di kamus pun berganti dari waktu ke waktu, misalnya <i>merk</i> menjadi <i>merek</i> dan <i>Perancis</i> menjadi <i>Prancis</i>.</div></div></div>
+    </div>
+  </div></div>
+
+  <!-- Penjelasan pengantar + peta materi -->
+  <div class="card bn-card c-biru"><div class="card-body">
+    <h5>Apa itu kata baku?</h5>
+    <p>Istilah baku adalah istilah yang pengucapan dan ejaannya mengikuti kaidah yang telah dicatat menurut Kamus Besar Bahasa Indonesia (KBBI).</p>
+    <div class="pg-fakta"><b>Tahukah kamu?</b> Siswa di Medan dan siswa di Makassar bisa bertukar surat tanpa menebak-nebak kata dialek masing-masing. Itulah fungsi kata baku sebagai pemersatu.</div>
+    <h6 class="mt-4 mb-2">Peta materi <small class="text-secondary fw-normal">(ketuk untuk melompat ke bagiannya)</small></h6>
+    <div class="pg-chips">
+      <button type="button" class="pg-chip" data-bab="m1">1 &middot; Pengertian</button>
+      <button type="button" class="pg-chip" data-bab="m2">2 &middot; Fungsi</button>
+      <button type="button" class="pg-chip" data-bab="m3">3 &middot; Ciri-ciri</button>
+      <button type="button" class="pg-chip" data-bab="m4">4 &middot; Karakteristik</button>
+      <button type="button" class="pg-chip" data-bab="m5">5 &middot; Kapan memakai</button>
+    </div>
+  </div></div>
+
+  <div><button class="btn btn-warning btn-lg rounded-pill px-4 fw-semibold" data-hal="materi">Ke Materi Inti</button></div>
+</section>
+
+<!-- ============ CEK KATA ============ -->
+<section id="cek_kata" class="halaman d-none">
+  <div class="ck-hero">
+    <span class="ck-stiker s1" aria-hidden="true">✏️</span>
+    <span class="ck-stiker s2" aria-hidden="true">📚</span>
+    <span class="ck-stiker s3" aria-hidden="true">✅</span>
+    <span class="ck-chip">✨ Kamus Mini Interaktif</span>
+    <h2 class="ck-judul">Cek Kata</h2>
+    <p class="ck-sub">Ragu menulis sebuah kata? Ketik di sini dan lihat bentuk bakunya.</p>
+
+    <form id="ck-form" class="ck-cari" autocomplete="off">
+      <span class="ck-ikon" aria-hidden="true">🔍</span>
+      <input id="ck-input" type="text" placeholder="Ketik kata di sini…" aria-label="Kata yang diperiksa" disabled>
+      <button id="ck-tombol" type="submit" class="btn btn-warning rounded-pill px-4 fw-semibold" disabled>Cek</button>
+      <div id="ck-saran" class="list-group ck-saran d-none" role="listbox"></div>
+    </form>
+    <div class="ck-aksi">
+      <button type="button" id="ck-acak" class="btn btn-light btn-sm rounded-pill fw-semibold" disabled>🎲 Kata Acak</button>
+      <span class="ck-stat" id="ck-stat"></span>
+    </div>
+  </div>
+
+  <!-- Penjelasan keterbatasan daftar kata -->
+  <div class="ck-info">
+    <span class="ck-info-ikon" aria-hidden="true">💡</span>
+    <div>
+      <strong>Perlu diketahui:</strong> daftar kata pada fitur ini terbatas, yaitu
+      <span id="ck-jumlah">…</span> pasang kata baku dan tidak baku yang sering dijumpai dalam
+      kehidupan sehari-hari. Jika kata yang kamu cari belum ada, periksa juga langsung di KBBI.
+    </div>
+  </div>
+
+  <ul class="nav nav-pills ck-tab" role="tablist">
+    <li class="nav-item" role="presentation"><button class="nav-link active rounded-pill" id="ck-btn-cek" data-bs-toggle="pill" data-bs-target="#ck-tab-cek" type="button" role="tab">🔍 Hasil Cek</button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#ck-tab-jelajah" type="button" role="tab">📖 Jelajah A–Z</button></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="ck-tab-cek" role="tabpanel">
+      <div id="ck-hasil" aria-live="polite"></div>
+    </div>
+    <div class="tab-pane fade" id="ck-tab-jelajah" role="tabpanel">
+      <div id="ck-abjad" class="ck-abjad"></div>
+      <div id="ck-daftar" class="row g-3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MATERI INTI ============ -->
+<section id="materi" class="halaman d-none">
+   <!-- Isi materi ada di JS/materi.js (bagian "DATA MATERI"); gaya ada di css/materi.css -->
+  <div id="bar"></div>
+
+  <!-- Hero -->
+  <header class="mt-hero">
+    <span class="blob b1"></span><span class="blob b2"></span>
+    <div class="mt-tools">
+      <div class="input-group cari"><span class="input-group-text"><i data-lucide="search"></i></span><input id="cari" class="form-control" type="search" placeholder="Cari materi…" aria-label="Cari materi"></div>
+      <button id="tema" class="btn btn-icon" type="button" aria-label="Ganti tema terang atau gelap"><i data-lucide="moon" class="i-moon"></i><i data-lucide="sun" class="i-sun"></i></button>
+    </div>
+    <div class="row align-items-center g-4 position-relative">
+      <div class="col-lg-7 reveal">
+        <span class="chip">Materi Bahasa Indonesia</span>
+        <h2 class="display-5 fw-bold mt-3">Kata Baku dan Tidak Baku</h2>
+        <p class="lead my-4">Pelajari pengertian, fungsi, ciri-ciri, dan karakteristik kata baku, serta kapan kita perlu menggunakannya dalam situasi resmi.</p>
+        <button class="btn btn-grad btn-lg" type="button" data-go="m1">Mulai Belajar <i data-lucide="arrow-down"></i></button>
+      </div>
+      <div class="col-lg-5 reveal" aria-hidden="true">
+        <svg viewBox="0 0 360 280" class="img-fluid hero-art">
+          <rect x="40" y="30" width="190" height="86" rx="22" class="b-ok"/><text x="135" y="82" text-anchor="middle" class="t-big">izin</text>
+          <circle cx="62" cy="52" r="14" fill="#16a34a"/><path d="M55 52l5 5 9-10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="130" y="150" width="190" height="86" rx="22" class="b-no"/><text x="225" y="202" text-anchor="middle" class="t-big t-s">ijin</text>
+          <circle cx="152" cy="172" r="14" fill="#dc2626"/><path d="M146 166l12 12M158 166l-12 12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- Daftar isi + bagian materi (dibuat oleh JS/materi.js) -->
+  <div class="row g-4">
+    <aside class="col-lg-3"><nav id="toc" class="toc glass" aria-label="Daftar isi"></nav></aside>
+    <div class="col-lg-9">
+      <div id="isi"></div>
+      <div id="kosong" class="glass empty" hidden>
+        <i data-lucide="search-x"></i>
+        <h3>Materi tidak ditemukan</h3>
+        <p class="mb-0">Tidak ada bagian yang memuat “<span id="kq"></span>”. Coba kata kunci lain.</p>
+      </div>
+    </div>
+  </div>
+  <button id="atas" class="btn btn-grad" type="button" aria-label="Kembali ke atas"><i data-lucide="arrow-up"></i></button>
+</section>
+
+<!-- ============ LATIHAN & KUIS ============ -->
+<section id="latihan" class="halaman d-none">
+ <div id="lt-root" aria-live="polite"></div>
+</section>
+
+<!-- ============ Game Kata Baku ============ -->
+<section id="game" class="halaman d-none">
+ 
+</section>
+
+</main>
+
+<footer class="kb-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <a class="kb-brand text-white mb-3" href="#beranda" data-hal="beranda"><span class="logo-ikon">K</span><span class="kb-brand-teks"><b>KataBaku<span>.id</span></b></span></a>
+        <p class="mb-2">Media pembelajaran interaktif tentang bentuk kata baku dan tidak baku dalam bahasa Indonesia.</p>
+        <em>Belajar Kata Baku, Berbahasa Lebih Baik.</em>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Jelajahi</h6>
+        <ul>
+          <li><a href="#beranda" data-hal="beranda">Beranda</a></li>
+          <li><a href="#pengantar" data-hal="pengantar">Pengantar</a></li>
+          <li><a href="#cek_kata" data-hal="cek_kata">Cek Kata</a></li>
+          <li><a href="#materi" data-hal="materi">Materi Inti</a></li>
+          <li><a href="#latihan" data-hal="latihan">Latihan</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-4">
+        <h6>Rujukan</h6>
+        <ul>
+          <li><a href="https://kbbi.kemendikdasmen.go.id" target="_blank" rel="noopener">KBBI Daring &#8599;</a></li>
+          <li><a href="#materi" data-hal="materi">Daftar pustaka materi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kb-foot-bar">
+      <span>&copy; <span id="kb-tahun"></span> KataBaku.id</span>
+      <button id="kb-atas" class="btn btn-sm kb-top" type="button">&uarr; Kembali ke atas</button>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/motion@12.23.12/dist/motion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+<script src="JS/script.js"></script>
+<script src="JS/cek-kata.js"></script>
+<script src="JS/materi.js"></script>
+<script src="JS/latihan.js"></script>
+<script src="JS/beranda.js"></script>
+</body>
+</html>

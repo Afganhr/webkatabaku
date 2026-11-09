@@ -1,0 +1,151 @@
+{
+  "jenis_soal": "Perbaikan Kalimat",
+  "topik": "Kata Baku dan Tidak Baku",
+  "jumlah_soal": 10,
+  "paket": [
+    {
+      "id": "p1",
+      "judul": "Paket 1",
+      "soal": [
+        {
+          "nomor": 1,
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Silahkan antre dan jangan menyerobot antrian.\"",
+          "kunci_jawaban": "Silakan mengantre dan jangan menyerobot antrean.",
+          "penjelasan": "Kata tidak baku pada kalimat adalah \"silahkan\" (baku: silakan) dan \"antrian\" (baku: antrean). Pada kunci jawaban, \"antre\" juga ditulis \"mengantre\" agar bentuk kata kerjanya lebih tepat.",
+          "susunan": "Silakan mengantre dan jangan menyerobot antrean.",
+          "pengecoh": [
+            "silahkan",
+            "antrian",
+            "antre"
+          ]
+        },
+        {
+          "nomor": 2,
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Panitia menghimbau peserta untuk mentaati jadual kegiatan. Peserta yang berhalangan wajib meminta ijin kepada koordinator.\"",
+          "kunci_jawaban": "Panitia mengimbau peserta untuk menaati jadwal kegiatan. Peserta yang berhalangan wajib meminta izin kepada koordinator.",
+          "penjelasan": "Ada empat kata tidak baku: \"menghimbau\" → \"mengimbau\" (kata dasar imbau), \"mentaati\" → \"menaati\" (kata dasar taat; huruf t luluh), \"jadual\" → \"jadwal\", dan \"ijin\" → \"izin\".",
+          "susunan": "Panitia mengimbau peserta untuk menaati jadwal kegiatan. Peserta yang berhalangan wajib meminta izin kepada koordinator.",
+          "pengecoh": [
+            "menghimbau",
+            "mentaati",
+            "jadual",
+            "ijin"
+          ]
+        },
+        {
+          "nomor": 3,
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Buat para peserta, silahkan ngantri dan jangan lupa bawa fotocopy kartu identitas.\"",
+          "kunci_jawaban": "Para peserta dimohon mengantre dengan tertib dan membawa fotokopi kartu identitas.",
+          "penjelasan": "Kata tidak baku yang harus diperbaiki: \"silahkan\" → \"silakan\"/\"dimohon\", \"ngantri\" → \"mengantre\", \"bawa\" → \"membawa\", dan \"fotocopy\" → \"fotokopi\". Frasa \"Buat para peserta\" dan \"jangan lupa\" bersifat percakapan sehingga sebaiknya diganti dengan \"Para peserta dimohon ...\" agar sesuai konteks resmi.",
+          "susunan": "Para peserta dimohon mengantre dengan tertib dan membawa fotokopi kartu identitas.",
+          "pengecoh": [
+            "silahkan",
+            "ngantri",
+            "bawa",
+            "fotocopy",
+            "Silakan"
+          ],
+          "susunan_alternatif": [
+            "Silakan para peserta mengantre dengan tertib dan membawa fotokopi kartu identitas."
+          ]
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Adik menghapal doa sebelum tidur dan menyimpan kwitansi di lemari.\"",
+          "kunci_jawaban": "Adik menghafal doa sebelum tidur dan menyimpan kuitansi di lemari.",
+          "penjelasan": "Kata tidak baku: \"menghapal\" → \"menghafal\" dan \"kwitansi\" → \"kuitansi\".",
+          "susunan": "Adik menghafal doa sebelum tidur dan menyimpan kuitansi di lemari.",
+          "pengecoh": [
+            "menghapal",
+            "kwitansi"
+          ],
+          "nomor": 4
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Sekolah kami memiliki sistim penilaian yang jelas. Setiap guru wajib menyerahkan hasil analisa nilai sesuai azas keadilan. Siswa yang melanggar tata tertib akan dikenai sangsi dan wajib membuat surat pernyataan.\"",
+          "kunci_jawaban": "Sekolah kami memiliki sistem penilaian yang jelas. Setiap guru wajib menyerahkan hasil analisis nilai sesuai asas keadilan. Siswa yang melanggar tata tertib akan dikenai sanksi dan wajib membuat surat pernyataan.",
+          "penjelasan": "Kata tidak baku: sistim → sistem, analisa → analisis, azas → asas, dan sangsi → sanksi.",
+          "susunan": "Sekolah kami memiliki sistem penilaian yang jelas. Setiap guru wajib menyerahkan hasil analisis nilai sesuai asas keadilan. Siswa yang melanggar tata tertib akan dikenai sanksi dan wajib membuat surat pernyataan.",
+          "pengecoh": [
+            "sistim",
+            "analisa",
+            "azas",
+            "sangsi"
+          ],
+          "nomor": 5
+        }
+      ],
+      "jumlah_soal": 5
+    },
+    {
+      "id": "p2",
+      "judul": "Paket 2",
+      "soal": [
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Selamat pagi semuanya. Hari ini kita ngadain lomba kebersihan kelas. Tolong semua siswa ikut berpartisipasi aktif dan jangan lupa bawa peralatan kebersihan dari rumah, ya!\"",
+          "kunci_jawaban": "Selamat pagi, hadirin sekalian. Hari ini kita mengadakan lomba kebersihan kelas. Seluruh siswa diharapkan berpartisipasi aktif dan membawa peralatan kebersihan dari rumah.",
+          "penjelasan": "Teks sambutan resmi harus memakai kata baku dan menghindari bentuk percakapan: \"ngadain\" → \"mengadakan\", \"bawa\" → \"membawa\", serta \"Tolong ... ya!\" diganti \"diharapkan\".",
+          "susunan": "Selamat pagi, hadirin sekalian. Hari ini kita mengadakan lomba kebersihan kelas. Seluruh siswa diharapkan berpartisipasi aktif dan membawa peralatan kebersihan dari rumah.",
+          "pengecoh": [
+            "ngadain",
+            "bawa",
+            "Tolong",
+            "ya!"
+          ],
+          "nomor": 6
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Rani terlambat karna hujan deras dan tidak membawa payung sehingga bajunya basah kuyub.\"",
+          "kunci_jawaban": "Rani terlambat karena hujan deras dan tidak membawa payung sehingga bajunya basah kuyup.",
+          "penjelasan": "Kata tidak baku: \"karna\" → \"karena\" dan \"kuyub\" → \"kuyup\".",
+          "susunan": "Rani terlambat karena hujan deras dan tidak membawa payung sehingga bajunya basah kuyup.",
+          "pengecoh": [
+            "karna",
+            "kuyub."
+          ],
+          "nomor": 7
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Para pengrajin di desa itu sangat trampil dan kreatifitas mereka patut dihargai.\"",
+          "kunci_jawaban": "Para perajin di desa itu sangat terampil dan kreativitas mereka patut dihargai.",
+          "penjelasan": "Kata tidak baku: pengrajin → perajin, trampil → terampil, dan kreatifitas → kreativitas.",
+          "susunan": "Para perajin di desa itu sangat terampil dan kreativitas mereka patut dihargai.",
+          "pengecoh": [
+            "pengrajin",
+            "trampil",
+            "kreatifitas"
+          ],
+          "nomor": 8
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Hari ini kami mempraktekkan cara membuat proposal kegiatan. Sebelum menyusunnya, kami menganalisa kebutuhan peserta, lalu merubah rencana awal karena dianggap kurang obyektif. Hasilnya, proposal yang dibuat menjadi lebih sistimatis.\"",
+          "kunci_jawaban": "Hari ini kami mempraktikkan cara membuat proposal kegiatan. Sebelum menyusunnya, kami menganalisis kebutuhan peserta, lalu mengubah rencana awal karena dianggap kurang objektif. Hasilnya, proposal yang dibuat menjadi lebih sistematis.",
+          "penjelasan": "Kata tidak baku: mempraktekkan → mempraktikkan, menganalisa → menganalisis, merubah → mengubah, obyektif → objektif, dan sistimatis → sistematis.",
+          "susunan": "Hari ini kami mempraktikkan cara membuat proposal kegiatan. Sebelum menyusunnya, kami menganalisis kebutuhan peserta, lalu mengubah rencana awal karena dianggap kurang objektif. Hasilnya, proposal yang dibuat menjadi lebih sistematis.",
+          "pengecoh": [
+            "mempraktekkan",
+            "menganalisa",
+            "merubah",
+            "obyektif",
+            "sistimatis."
+          ],
+          "nomor": 9
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat yang sudah diperbaiki.\n\"Perhatian buat semua siswa. Besok kita ada kegiatan bakti sosial di panti asuhan. Semua siswa wajib hadir tepat waktu dan bawa sumbangan seikhlasnya. Yang nggak bisa datang harus kasih tau wali kelas.\"",
+          "kunci_jawaban": "Perhatian kepada seluruh siswa. Besok akan diadakan kegiatan bakti sosial di panti asuhan. Semua siswa wajib hadir tepat waktu dan membawa sumbangan seikhlasnya. Siswa yang tidak dapat hadir wajib memberi tahu wali kelas.",
+          "penjelasan": "Pengumuman resmi harus baku: \"buat\" → \"kepada\", \"bawa\" → \"membawa\", \"nggak\" → \"tidak\", dan \"kasih tau\" → \"memberi tahu\".",
+          "susunan": "Perhatian kepada seluruh siswa. Besok akan diadakan kegiatan bakti sosial di panti asuhan. Semua siswa wajib hadir tepat waktu dan membawa sumbangan seikhlasnya. Siswa yang tidak dapat hadir wajib memberi tahu wali kelas.",
+          "pengecoh": [
+            "buat",
+            "bawa",
+            "nggak",
+            "kasih",
+            "tau"
+          ],
+          "nomor": 10
+        }
+      ],
+      "jumlah_soal": 5
+    }
+  ]
+}

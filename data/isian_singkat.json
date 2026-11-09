@@ -1,0 +1,132 @@
+{
+  "jenis_soal": "Isian Singkat",
+  "topik": "Kata Baku dan Tidak Baku",
+  "jumlah_soal": 10,
+  "paket": [
+    {
+      "id": "p1",
+      "judul": "Paket 1",
+      "soal": [
+        {
+          "nomor": 1,
+          "soal": "Susunlah kata-kata berikut menjadi pengertian kata baku dan kata tidak baku yang benar.",
+          "kunci_jawaban": "Kata baku sesuai dengan kaidah bahasa Indonesia, sedangkan kata tidak baku tidak sesuai dengan kaidah.",
+          "penjelasan": "Jawaban yang benar harus memuat tiga unsur: (1) pengertian kata baku, yaitu kata yang bentuknya sesuai kaidah bahasa Indonesia; (2) pengertian kata tidak baku, yaitu kata yang tidak sesuai kaidah bentuk atau ejaan baku; dan (3) minimal satu ciri kata baku, misalnya sesuai kaidah ejaan dan tata bahasa atau tepat digunakan dalam situasi resmi.",
+          "susunan": "Kata baku sesuai dengan kaidah bahasa Indonesia, sedangkan kata tidak baku tidak sesuai dengan kaidah.",
+          "pengecoh": [
+            "selalu",
+            "santai"
+          ]
+        },
+        {
+          "nomor": 2,
+          "soal": "Bacalah kalimat berikut.\n\"Rani meminta ijin kepada guru sebelum mengikuti praktek di laboratorium.\"\nSusunlah kata-kata menjadi dua kata tidak baku beserta bentuk bakunya.",
+          "kunci_jawaban": "ijin menjadi izin dan praktek menjadi praktik.",
+          "penjelasan": "Menurut KBBI, bentuk baku dari \"ijin\" adalah \"izin\" (huruf z dipertahankan dari kata serapan asal Arab) dan bentuk baku dari \"praktek\" adalah \"praktik\".",
+          "susunan": "ijin menjadi izin dan praktek menjadi praktik.",
+          "pengecoh": [
+            "ijen",
+            "praktis"
+          ]
+        },
+        {
+          "nomor": 3,
+          "soal": "Susunlah kata-kata menjadi kalimat resmi yang memuat bentuk baku dari \"kwalitas\" (rujuk KBBI Daring).",
+          "kunci_jawaban": "Kualitas layanan perpustakaan akan dievaluasi pada akhir semester.",
+          "penjelasan": "Bentuk baku dari \"kwalitas\" adalah \"kualitas\" menurut KBBI. Kalimat yang dibuat harus menggunakan kata \"kualitas\" dengan benar, memakai kata-kata baku lain, dan sesuai untuk konteks resmi. Kalimat lain yang memenuhi syarat tersebut dapat diterima.",
+          "susunan": "Kualitas layanan perpustakaan akan dievaluasi pada akhir semester.",
+          "pengecoh": [
+            "Kwalitas",
+            "evaluasi"
+          ]
+        },
+        {
+          "soal": "Susunlah kata-kata berikut menjadi satu kalimat yang menjelaskan mengapa kata baku perlu digunakan dalam surat dinas.",
+          "kunci_jawaban": "Surat dinas termasuk situasi resmi sehingga harus menggunakan bahasa yang sesuai kaidah agar isinya jelas, tepat, dan tidak menimbulkan salah tafsir.",
+          "penjelasan": "Surat dinas termasuk situasi resmi, sehingga bahasanya harus sesuai kaidah agar isinya jelas dan tepat serta tidak menimbulkan salah tafsir.",
+          "susunan": "Surat dinas termasuk situasi resmi sehingga harus menggunakan bahasa yang sesuai kaidah agar isinya jelas, tepat, dan tidak menimbulkan salah tafsir.",
+          "pengecoh": [
+            "santai",
+            "bebas",
+            "boleh"
+          ],
+          "nomor": 4
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat resmi yang memuat bentuk baku dari \"hakekat\" (rujuk KBBI Daring).",
+          "kunci_jawaban": "Hakikat pendidikan adalah membantu peserta didik mengembangkan potensi dirinya.",
+          "penjelasan": "Bentuk baku dari \"hakekat\" adalah \"hakikat\" menurut KBBI. Kalimat resmi harus memakai kata \"hakikat\" dan kata-kata baku lainnya.",
+          "susunan": "Hakikat pendidikan adalah membantu peserta didik mengembangkan potensi dirinya.",
+          "pengecoh": [
+            "hakekat",
+            "menghambat"
+          ],
+          "nomor": 5
+        }
+      ],
+      "jumlah_soal": 5
+    },
+    {
+      "id": "p2",
+      "judul": "Paket 2",
+      "soal": [
+        {
+          "soal": "Susunlah kata-kata menjadi dua contoh kata baku beserta bentuk tidak bakunya.",
+          "kunci_jawaban": "objek tidak bakunya obyek dan izin tidak bakunya ijin.",
+          "penjelasan": "Contoh pasangan baku – tidak baku: objek (obyek) dan izin (ijin). Menurut KBBI, \"objek\" ditulis dengan j dan \"izin\" ditulis dengan z.",
+          "susunan": "objek tidak bakunya obyek dan izin tidak bakunya ijin.",
+          "pengecoh": [
+            "objeg",
+            "ijen"
+          ],
+          "nomor": 6
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat yang menjelaskan perbedaan penggunaan kata baku dan kata tidak baku.",
+          "kunci_jawaban": "Kata baku digunakan dalam situasi resmi, sedangkan kata tidak baku lazim dalam situasi santai.",
+          "penjelasan": "Kata baku dipakai dalam situasi resmi (surat dinas, pidato, karya ilmiah), sedangkan kata tidak baku lazim dalam situasi santai seperti percakapan akrab.",
+          "susunan": "Kata baku digunakan dalam situasi resmi, sedangkan kata tidak baku lazim dalam situasi santai.",
+          "pengecoh": [
+            "sebaliknya",
+            "jarang"
+          ],
+          "nomor": 7
+        },
+        {
+          "soal": "Bacalah kalimat berikut.\n\"Selama bulan Ramadhan, siswa mengikuti pesantren kilat dan silaturrahmi antarteman terjalin erat.\"\nSusunlah kata-kata menjadi dua kata tidak baku beserta bentuk bakunya.",
+          "kunci_jawaban": "Ramadhan menjadi Ramadan dan silaturrahmi menjadi silaturahmi.",
+          "penjelasan": "Bentuk baku menurut KBBI: Ramadhan → Ramadan dan silaturrahmi → silaturahmi.",
+          "susunan": "Ramadhan menjadi Ramadan dan silaturrahmi menjadi silaturahmi.",
+          "pengecoh": [
+            "Ramadlan",
+            "silatrahmi"
+          ],
+          "nomor": 8
+        },
+        {
+          "soal": "Susunlah kata-kata menjadi kalimat resmi yang memuat bentuk baku dari \"mentri\" (rujuk KBBI Daring).",
+          "kunci_jawaban": "Menteri Pendidikan akan membuka acara seminar nasional itu.",
+          "penjelasan": "Bentuk baku dari \"mentri\" adalah \"menteri\" menurut KBBI.",
+          "susunan": "Menteri Pendidikan akan membuka acara seminar nasional itu.",
+          "pengecoh": [
+            "Mentri",
+            "menutup"
+          ],
+          "nomor": 9
+        },
+        {
+          "soal": "Bacalah kalimat berikut.\n\"Setelah sholat dzuhur pada hari Jum’at, para siswa berkumpul di aula.\"\nSusunlah kata-kata menjadi tiga kata tidak baku beserta bentuk bakunya.",
+          "kunci_jawaban": "sholat menjadi salat, dzuhur menjadi zuhur, dan Jum’at menjadi Jumat.",
+          "penjelasan": "Bentuk baku menurut KBBI: sholat → salat, dzuhur → zuhur, dan Jum’at → Jumat.",
+          "susunan": "sholat menjadi salat, dzuhur menjadi zuhur, dan Jum’at menjadi Jumat.",
+          "pengecoh": [
+            "solat",
+            "Juma’at"
+          ],
+          "nomor": 10
+        }
+      ],
+      "jumlah_soal": 5
+    }
+  ]
+}

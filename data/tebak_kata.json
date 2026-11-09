@@ -1,0 +1,675 @@
+{
+  "jenis_soal": "Tebak Kata",
+  "topik": "Kata Baku dan Tidak Baku",
+  "jumlah_soal": 40,
+  "paket": [
+    {
+      "id": "p1",
+      "judul": "Paket 1",
+      "jumlah_soal": 10,
+      "soal": [
+        {
+          "nomor": 1,
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Apotik"
+            },
+            {
+              "label": "B",
+              "teks": "Apotek"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"apotek\", sedangkan \"apotik\" tidak baku."
+        },
+        {
+          "nomor": 2,
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Izin"
+            },
+            {
+              "label": "B",
+              "teks": "Ijin"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"izin\", sedangkan \"ijin\" tidak baku."
+        },
+        {
+          "nomor": 3,
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Nasihat"
+            },
+            {
+              "label": "B",
+              "teks": "Nasehat"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"nasihat\", sedangkan \"nasehat\" tidak baku."
+        },
+        {
+          "nomor": 4,
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Risiko"
+            },
+            {
+              "label": "B",
+              "teks": "Resiko"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"risiko\", sedangkan \"resiko\" tidak baku."
+        },
+        {
+          "nomor": 5,
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Aktivitas"
+            },
+            {
+              "label": "B",
+              "teks": "Aktifitas"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"aktivitas\", sedangkan \"aktifitas\" tidak baku."
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Cokelat"
+            },
+            {
+              "label": "B",
+              "teks": "Coklat"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"cokelat\", sedangkan \"coklat\" tidak baku.",
+          "nomor": 6
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Kaus"
+            },
+            {
+              "label": "B",
+              "teks": "Kaos"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"kaus\", sedangkan \"kaos\" tidak baku.",
+          "nomor": 7
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Karir"
+            },
+            {
+              "label": "B",
+              "teks": "Karier"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"karier\", sedangkan \"karir\" tidak baku.",
+          "nomor": 8
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Merek"
+            },
+            {
+              "label": "B",
+              "teks": "Merk"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"merek\", sedangkan \"merk\" tidak baku.",
+          "nomor": 9
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Nomer"
+            },
+            {
+              "label": "B",
+              "teks": "Nomor"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"nomor\", sedangkan \"nomer\" tidak baku.",
+          "nomor": 10
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "judul": "Paket 2",
+      "jumlah_soal": 10,
+      "soal": [
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Provinsi"
+            },
+            {
+              "label": "B",
+              "teks": "Propinsi"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"provinsi\", sedangkan \"propinsi\" tidak baku.",
+          "nomor": 11
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Kedaluwarsa"
+            },
+            {
+              "label": "B",
+              "teks": "Kadaluwarsa"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"kedaluwarsa\", sedangkan \"kadaluwarsa\" tidak baku.",
+          "nomor": 12
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Telpon"
+            },
+            {
+              "label": "B",
+              "teks": "Telepon"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"telepon\", sedangkan \"telpon\" tidak baku.",
+          "nomor": 13
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Napas"
+            },
+            {
+              "label": "B",
+              "teks": "Nafas"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"napas\", sedangkan \"nafas\" tidak baku.",
+          "nomor": 14
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Teknologi"
+            },
+            {
+              "label": "B",
+              "teks": "Tekhnologi"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"teknologi\", sedangkan \"tekhnologi\" tidak baku.",
+          "nomor": 15
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Aksesori"
+            },
+            {
+              "label": "B",
+              "teks": "Aksesoris"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"aksesori\", sedangkan \"aksesoris\" tidak baku.",
+          "nomor": 16
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Aquarium"
+            },
+            {
+              "label": "B",
+              "teks": "Akuarium"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"akuarium\", sedangkan \"aquarium\" tidak baku.",
+          "nomor": 17
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Almunium"
+            },
+            {
+              "label": "B",
+              "teks": "Aluminium"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"aluminium\", sedangkan \"almunium\" tidak baku.",
+          "nomor": 18
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Sopir"
+            },
+            {
+              "label": "B",
+              "teks": "Supir"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"sopir\", sedangkan \"supir\" tidak baku.",
+          "nomor": 19
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Atlit"
+            },
+            {
+              "label": "B",
+              "teks": "Atlet"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"atlet\", sedangkan \"atlit\" tidak baku.",
+          "nomor": 20
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "judul": "Paket 3",
+      "jumlah_soal": 10,
+      "soal": [
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Adzan"
+            },
+            {
+              "label": "B",
+              "teks": "Azan"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"azan\", sedangkan \"adzan\" tidak baku.",
+          "nomor": 21
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Baterai"
+            },
+            {
+              "label": "B",
+              "teks": "Batere"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"baterai\", sedangkan \"batere\" tidak baku.",
+          "nomor": 22
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Cabe"
+            },
+            {
+              "label": "B",
+              "teks": "Cabai"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"cabai\", sedangkan \"cabe\" tidak baku.",
+          "nomor": 23
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Cengkeh"
+            },
+            {
+              "label": "B",
+              "teks": "Cengkih"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"cengkih\", sedangkan \"cengkeh\" tidak baku.",
+          "nomor": 24
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Detil"
+            },
+            {
+              "label": "B",
+              "teks": "Detail"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"detail\", sedangkan \"detil\" tidak baku.",
+          "nomor": 25
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Detergen"
+            },
+            {
+              "label": "B",
+              "teks": "Deterjen"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"detergen\", sedangkan \"deterjen\" tidak baku.",
+          "nomor": 26
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Ekspor"
+            },
+            {
+              "label": "B",
+              "teks": "Eksport"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"ekspor\", sedangkan \"eksport\" tidak baku.",
+          "nomor": 27
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Februari"
+            },
+            {
+              "label": "B",
+              "teks": "Pebruari"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"februari\", sedangkan \"pebruari\" tidak baku.",
+          "nomor": 28
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Frekwensi"
+            },
+            {
+              "label": "B",
+              "teks": "Frekuensi"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"frekuensi\", sedangkan \"frekwensi\" tidak baku.",
+          "nomor": 29
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Goa"
+            },
+            {
+              "label": "B",
+              "teks": "Gua"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"gua\", sedangkan \"goa\" tidak baku.",
+          "nomor": 30
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "judul": "Paket 4",
+      "jumlah_soal": 10,
+      "soal": [
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Hadis"
+            },
+            {
+              "label": "B",
+              "teks": "Hadist"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"hadis\", sedangkan \"hadist\" tidak baku.",
+          "nomor": 31
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Ijasah"
+            },
+            {
+              "label": "B",
+              "teks": "Ijazah"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"ijazah\", sedangkan \"ijasah\" tidak baku.",
+          "nomor": 32
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Import"
+            },
+            {
+              "label": "B",
+              "teks": "Impor"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"impor\", sedangkan \"import\" tidak baku.",
+          "nomor": 33
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Jendral"
+            },
+            {
+              "label": "B",
+              "teks": "Jenderal"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"jenderal\", sedangkan \"jendral\" tidak baku.",
+          "nomor": 34
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Katagori"
+            },
+            {
+              "label": "B",
+              "teks": "Kategori"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"kategori\", sedangkan \"katagori\" tidak baku.",
+          "nomor": 35
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Kuesioner"
+            },
+            {
+              "label": "B",
+              "teks": "Kuisioner"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"kuesioner\", sedangkan \"kuisioner\" tidak baku.",
+          "nomor": 36
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Miliar"
+            },
+            {
+              "label": "B",
+              "teks": "Milyar"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"miliar\", sedangkan \"milyar\" tidak baku.",
+          "nomor": 37
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Musium"
+            },
+            {
+              "label": "B",
+              "teks": "Museum"
+            }
+          ],
+          "kunci_jawaban": "B",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"museum\", sedangkan \"musium\" tidak baku.",
+          "nomor": 38
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "November"
+            },
+            {
+              "label": "B",
+              "teks": "Nopember"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"november\", sedangkan \"nopember\" tidak baku.",
+          "nomor": 39
+        },
+        {
+          "soal": "Pilihlah kata yang baku dari dua pilihan berikut!",
+          "pilihan": [
+            {
+              "label": "A",
+              "teks": "Paspor"
+            },
+            {
+              "label": "B",
+              "teks": "Pasport"
+            }
+          ],
+          "kunci_jawaban": "A",
+          "penjelasan": "Bentuk baku menurut KBBI adalah \"paspor\", sedangkan \"pasport\" tidak baku.",
+          "nomor": 40
+        }
+      ]
+    }
+  ]
+}
