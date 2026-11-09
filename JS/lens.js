@@ -4,7 +4,7 @@
 'use strict';
 const URL_DATA = 'databaku.json';   // samakan dengan JS/cek-kata.js
 const URL_TESS = 'https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';   // dimuat hanya saat pertama kali memindai
-const MAKS_SISI = 1600, MAKS_FILE = 15 * 1024 * 1024;
+const MAKS_SISI = 2400, MAKS_FILE = 15 * 1024 * 1024;
 const KBBI = k => 'https://kbbi.kemendikdasmen.go.id/entri/' + encodeURIComponent(k.toLowerCase());
 
 const sec = document.querySelector('#lens'); if (!sec) return;
@@ -15,7 +15,8 @@ const icons = () => window.lucide && lucide.createIcons();
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const v = $('#ln-video'), foto = $('#ln-foto'), cv = $('#ln-canvas');
 const LABEL = { baku: ['Baku', 'ln-baku'], tidak_baku: ['Tidak baku', 'ln-tb'], tidak_dikenali: ['Belum dikenali', 'ln-tk'] };
-let stream = null, facing = 'environment', worker = null, indeks = null, hasil = [], jml = 0;
+const stage = $('#ln-stage'), ocrCv = document.createElement('canvas');
+let track = null, stream = null, facing = 'environment', worker = null, indeks = null, hasil = [], jml = 0;
 
 const pesan = t => { const e = $('#ln-pesan'); e.hidden = !t; e.textContent = t || ''; };
 const muat = (on, t) => { $('#ln-loading').hidden = !on; if (t) $('#ln-status').textContent = t; if (on) $('#ln-bar').style.width = '0'; };
@@ -30,6 +31,7 @@ fetch(URL_DATA).then(r => { if (!r.ok) throw new Error(r.status); return r.json(
 }).catch(() => pesan('Database kata (databaku.json) belum dapat dimuat. Pastikan file itu satu folder dengan index.html dan buka lewat Live Server atau GitHub Pages.'));
 
 /* ---------- Mode tampilan area pemindaian: idle | kamera | foto ---------- */
+const rasio = (w, h) => stage.style.setProperty('--rasio', w + '/' + h);
 function mode(m) {
   v.hidden = m !== 'kamera'; foto.hidden = m !== 'foto'; $('#ln-kosong').hidden = m !== 'idle';
   $('#ln-stage').classList.toggle('kamera', m === 'kamera');
@@ -39,15 +41,19 @@ function mode(m) {
 }
 
 /* ---------- Kamera ---------- */
-function stopKamera() { if (stream) stream.getTracks().forEach(t => t.stop()); stream = null; v.srcObject = null; }
+function stopKamera() { track = null; if (stream) stream.getTracks().forEach(t => t.stop()); stream = null; v.srcObject = null; }
 async function mulaiKamera() {
   pesan('');
   if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) return pesan('Peramban ini belum mendukung akses kamera. Gunakan tombol Unggah Gambar.');
   if (!window.isSecureContext) return pesan('Kamera hanya dapat dipakai lewat HTTPS atau localhost. Buka website lewat Live Server atau GitHub Pages.');
   try {
     stopKamera();
-    stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: facing }, width: { ideal: 1920 } }, audio: false });
-    v.srcObject = stream; await v.play(); mode('kamera');
+    stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: facing }, width: { ideal: 2560 }, height: { ideal: 1440 } }, audio: false });
+    v.srcObject = stream; await v.play();
+    track = stream.getVideoTracks()[0];
+    try { const cap = track.getCapabilities ? track.getCapabilities() : {}; if (cap.focusMode && cap.focusMode.includes('continuous')) await track.applyConstraints({ advanced: [{ focusMode: 'continuous' }] }); } catch (_) {}
+    if (v.videoWidth) rasio(v.videoWidth, v.videoHeight);
+    mode('kamera');
   } catch (e) {
     stopKamera(); mode('idle');
     pesan({ NotAllowedError: 'Izin kamera ditolak. Izinkan kamera pada pengaturan peramban, atau pakai Unggah Gambar.', PermissionDeniedError: 'Izin kamera ditolak. Izinkan kamera pada pengaturan peramban, atau pakai Unggah Gambar.',
@@ -56,14 +62,38 @@ async function mulaiKamera() {
 }
 $('#ln-mulai').addEventListener('click', () => { if (stream) { stopKamera(); mode('idle'); } else mulaiKamera(); });
 $('#ln-ganti').addEventListener('click', () => { facing = facing === 'environment' ? 'user' : 'environment'; mulaiKamera(); });
-$('#ln-ambil').addEventListener('click', () => { if (!stream || !v.videoWidth) return; kePutih(v, v.videoWidth, v.videoHeight); stopKamera(); proses(); });
+$('#ln-ambil').addEventListener('click', async () => {
+  if (!stream || !v.videoWidth) return;
+  let ok = false;
+  if (window.ImageCapture && track) {   // foto resolusi penuh dari sensor, lebih tajam daripada bingkai video
+    try {
+      const blob = await new ImageCapture(track).takePhoto(), bmp = await createImageBitmap(blob);
+      kePutih(bmp, bmp.width, bmp.height); ok = true;
+    } catch (_) {}
+  }
+  if (!ok) kePutih(v, v.videoWidth, v.videoHeight);
+  stopKamera(); proses();
+});
 $('#ln-ulang').addEventListener('click', () => { pesan(''); mode('idle'); $('#ln-hasil').hidden = true; $('#ln-teks').value = ''; $('#ln-periksa').disabled = true; });
 new MutationObserver(() => { if (sec.classList.contains('d-none') && stream) { stopKamera(); mode('idle'); } }).observe(sec, { attributes: true, attributeFilter: ['class'] });   // matikan kamera saat pindah halaman
 
 /* ---------- Gambar -> kanvas (diperkecil agar OCR cepat) ---------- */
 function kePutih(src, w, h) {
   const k = Math.min(1, MAKS_SISI / Math.max(w, h)); cv.width = Math.round(w * k); cv.height = Math.round(h * k);
-  cv.getContext('2d').drawImage(src, 0, 0, cv.width, cv.height);
+  cv.getContext('2d').drawImage(src, 0, 0, cv.width, cv.height); rasio(cv.width, cv.height);
+}
+/* Pra-pengolahan agar OCR lebih akurat: abu-abu + peregangan kontras (persentil 1-99%) */
+function siapkanOCR() {
+  ocrCv.width = cv.width; ocrCv.height = cv.height;
+  const g = ocrCv.getContext('2d', { willReadFrequently: true }); g.drawImage(cv, 0, 0);
+  const im = g.getImageData(0, 0, ocrCv.width, ocrCv.height), d = im.data, n = d.length / 4, hist = new Uint32Array(256);
+  for (let i = 0; i < d.length; i += 4) { const y = (d[i] * 0.299 + d[i + 1] * 0.587 + d[i + 2] * 0.114) | 0; d[i] = y; hist[y]++; }
+  let lo = 0, hi = 255, a = 0;
+  while (lo < 255 && (a += hist[lo]) < n * 0.01) lo++;
+  a = 0; while (hi > 0 && (a += hist[hi]) < n * 0.01) hi--;
+  const sk = hi > lo + 10 ? 255 / (hi - lo) : 1;
+  for (let i = 0; i < d.length; i += 4) { const y = Math.max(0, Math.min(255, (d[i] - lo) * sk)); d[i] = d[i + 1] = d[i + 2] = y; }
+  g.putImageData(im, 0, 0); return ocrCv;
 }
 $('#ln-file').addEventListener('change', e => {
   const f = e.target.files[0]; e.target.value = ''; if (!f) return; pesan('');
@@ -84,7 +114,13 @@ async function proses() {
   try {
     await muatLib();
     if (!worker) worker = await Tesseract.createWorker('ind', 1, { logger: m => { if (TAHAP[m.status]) $('#ln-status').textContent = TAHAP[m.status]; $('#ln-bar').style.width = Math.round((m.progress || 0) * 100) + '%'; } });
-    const { data } = await worker.recognize(cv), teks = (data.text || '').trim();
+      await worker.setParameters({ user_defined_dpi: '300', preserve_interword_spaces: '1' });
+    const { data } = await worker.recognize(siapkanOCR());
+    let teks = (data.text || '').trim();
+    if (Array.isArray(data.lines) && data.lines.length) {   // buang kata ber-keyakinan rendah (sumber kata "aneh")
+      const t2 = data.lines.map(l => (l.words || []).filter(w => w.confidence >= 55 && /\p{L}/u.test(w.text)).map(w => w.text).join(' ')).filter(Boolean).join('\n').trim();
+      if (t2) teks = t2;
+    }
     if (!teks) return pesan('OCR tidak menemukan tulisan pada gambar. Coba foto yang lebih terang, lebih dekat, dan tidak buram.');
     $('#ln-teks').value = teks; periksa();
   } catch (e) {
