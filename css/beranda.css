@@ -13,7 +13,9 @@ svg.lucide{width:1.05em;height:1.05em;vertical-align:-.15em}
   background:radial-gradient(circle at 1px 1px,rgba(29,78,216,.10) 1.5px,transparent 0) 0 0/22px 22px,linear-gradient(135deg,#fff,#e8f0ff 60%,#efe7ff)}
 .bn-hero::before{content:"";position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;background:rgba(250,204,21,.5)}
 .bn-hero>*{position:relative}
-.bn-img{animation:bnAyun 5s ease-in-out infinite}
+/* .bn-img{animation:bnAyun 5s ease-in-out infinite} */
+.bn-img{display:block;width:100%;max-width:380px;height:auto;margin-inline:auto;animation:bnAyun 5s ease-in-out infinite}
+@media (max-width:575.98px){.bn-img{max-width:280px}}
 @keyframes bnAyun{50%{transform:translateY(-10px)}}
 .bn-stats{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:1.6rem}
 .bn-stat b{display:block;font-size:2rem;line-height:1;color:#1d4ed8}.bn-stat small{color:#64748b}
